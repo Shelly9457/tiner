@@ -32,3 +32,11 @@ body {
     color: var(--color-one) !important;
     background-color: #F5F5F5;
 }
+
+.color {
+    color: var(--color-one);
+}
+
+nav {
+    backdrop-filter: blur(10px) ;
+}
