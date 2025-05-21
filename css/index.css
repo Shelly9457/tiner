@@ -38,5 +38,11 @@ body {
 }
 
 nav {
-    backdrop-filter: blur(10px) ;
+    backdrop-filter: blur(10px);
+}
+
+.mycard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
