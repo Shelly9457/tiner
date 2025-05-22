@@ -156,36 +156,83 @@
     </header>
     <!-- Main Content-->
     <div class="container py-5">
-        <h2 class="fw-bold mb-4">🔬 技術原理</h2>
-        <p>
-            污水處理過程中產生的污泥含有豐富的有機物，經過 **厭氧發酵** 可轉化為沼氣（主要成分為甲烷）。
-            透過 **甲烷重整技術**，可將沼氣進一步轉化為高純度氫氣，並透過 **燃料電池** 轉換為電能，達到 **綠色能源循環** 的目標。
+
+        <!-- 技術原理 -->
+        <h2 class="fw-bold mb-4 color">🔬 技術原理</h2>
+        <p class="my-2">
+            污水處理過程中產生的污泥含有豐富的有機物，經過 <strong>厭氧發酵</strong> 可轉化為沼氣（主要成分為甲烷）。
+        </p>
+        <p class="my-2">
+            透過 <strong>甲烷重整技術</strong>，可將沼氣進一步轉化為高純度氫氣，並透過 <strong>燃料電池</strong> 轉換為電能，達成 <strong>綠色能源循環</strong> 的目標。
         </p>
 
-        <!-- 技術流程圖 -->
+        <!-- 流程圖 -->
         <div class="text-center my-4">
             <img src="污水轉氫流程圖.png" class="img-fluid" alt="污水處理廠污泥轉氫能發電流程">
-            <p class="text-muted">污泥 → 沼氣 → 氫氣 → 燃料電池發電</p>
+            <p class="text-muted my-2">污泥 → 沼氣 → 氫氣 → 燃料電池發電</p>
         </div>
 
-        <h2 class="fw-bold mt-5">⚡ 發電流程</h2>
-        <ol class="list-group list-group-numbered">
-            <li class="list-group-item">🔹 <strong>污泥收集</strong> - 來自污水處理廠的有機污泥。</li>
-            <li class="list-group-item">🔹 <strong>厭氧消化</strong> - 微生物分解污泥，產生沼氣。</li>
-            <li class="list-group-item">🔹 <strong>沼氣淨化</strong> - 去除硫化氫等雜質，提高燃氣品質。</li>
-            <li class="list-group-item">🔹 <strong>甲烷重整</strong> - 轉化為高純度氫氣。</li>
-            <li class="list-group-item">🔹 <strong>氫氣儲存</strong> - 固態儲氫技術確保安全存放。</li>
-            <li class="list-group-item">🔹 <strong>燃料電池發電</strong> - 透過氫燃料電池產生電力，並併入電網。</li>
-        </ol>
+        <!-- 發電流程 -->
+        <h2 class="fw-bold mt-5 color">⚡ 發電流程</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>污泥收集：</strong> 來自污水處理廠的有機污泥。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>厭氧消化：</strong> 微生物分解污泥，產生沼氣。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>沼氣淨化：</strong> 去除硫化氫等雜質，提高燃氣品質。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>甲烷重整：</strong> 轉化為高純度氫氣。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>氫氣儲存：</strong> 採用固態儲氫技術，確保安全。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>燃料電池發電：</strong> 將氫氣轉為電力，併入電網。</p>
+                </div>
+            </div>
+        </div>
 
-        <h2 class="fw-bold mt-5">💰 經濟與環境效益</h2>
-        <ul class="list-group">
-            <li class="list-group-item">✅ **能源回收率高** - 沼氣轉氫效率達 **95%**，燃料電池發電效率達 **50~73%**。</li>
-            <li class="list-group-item">✅ **減少碳排放** - 透過廢棄物轉能源，每年可減少 **數千噸 CO₂**。</li>
-            <li class="list-group-item">✅ **降低污泥處理成本** - 污泥資源化後，減少 **80% 處理費用**。</li>
-            <li class="list-group-item">✅ **穩定供電** - 可提供 **24 小時不間斷綠能電力**。</li>
-        </ul>
+        <!-- 經濟與環境效益 -->
+        <h2 class="fw-bold mt-5 color">💰 經濟與環境效益</h2>
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>能源回收率高：</strong> 沼氣轉氫效率達 95%，燃料電池效率 50~73%。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>減少碳排放：</strong> 年減數千噸 CO₂，兼顧綠能與環保。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>降低污泥處理成本：</strong> 污泥資源化後處理費用可減少 80%。</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="bg-white shadow-sm rounded p-3 mycard h-100">
+                    <p class="my-2"><strong>穩定供電：</strong> 提供 24 小時不間斷綠電。</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- 應用案例 -->
         <h2 class="fw-bold mt-5">🏭 污水廠應用案例</h2>
         <div class="row">
             <div class="col-md-6">
