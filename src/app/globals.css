@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --light: #ECEFF1;
+  --dark: #040A1B;
+  --one: #335495;
+  --two: #668BC4;
+  --three: #A5BECF;
 }
 
 body {
-  background: var(--background);
+  background: var(--light);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger span,
+.linkbox,
+.linkbox a::after,
+.submenu {
+  transition: all 500ms;
+}
+
+.hamburger.active :nth-child(1) {
+  transform: rotateZ(45deg) translate(5px, 1.5px);
+}
+
+.hamburger.active :nth-child(2) {
+  transform: rotateZ(45deg);
+}
+
+.hamburger.active :nth-child(3) {
+  transform: rotateZ(315deg);
+}
+
+.linkbox a::after {
+  content: "";
+  background-color: var(--light);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  margin: auto;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.linkbox a:hover::after {
+  transform: scaleX(1);
 }
