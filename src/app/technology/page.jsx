@@ -5,8 +5,8 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake, faLightbulb, faLeaf, faFlask, faLink, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
-import MainBattery from "@/components/techtology/MainBattery";
-import Good from "@/components/techtology/Good";
+import MainBattery from "@/components/technology/MainBattery";
+import Good from "@/components/technology/Good";
 const about = () => {
     return (
         <>
@@ -14,7 +14,7 @@ const about = () => {
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl">主要燃料電池</h1>
                 <MainBattery></MainBattery>
             </section>
-            <section className="container py-16 w-full md:w-[80%] mx-auto gap-5 center gap-5 min-h-screen flex-col">
+            <section className="container py-16 w-full md:w-[80%] mx-auto ">
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl text-center my-5">燃料電池技術怎麼運作？</h1>
                 <div className="center w-full md:flex-row flex-col">
                     <div className="md:w-1/2 w-full">
@@ -39,9 +39,11 @@ const about = () => {
                     </p>
                 </div>
             </section>
-            <section className="container py-16 w-full md:w-[80%] mx-auto gap-5 center gap-5 min-h-screen flex-col">
+            <section className="py-16 w-full gap-5 center gap-5 min-h-screen flex-col">
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl text-center my-5">電池燃料技術優勢在哪裡？</h1>
                 <Good></Good>
+            </section>
+            <section className="container py-16 w-full md:w-[80%] mx-auto ">
             </section>
         </>
     )
