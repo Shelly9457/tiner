@@ -147,7 +147,7 @@ const about = () => {
                 </p>
                 <OrganizeBlock></OrganizeBlock>
                 <div className="center">
-                    <Link href="/">
+                    <Link href="/technology">
                         <Btn text={"地諾技術"}></Btn>
                     </Link>
                 </div>
