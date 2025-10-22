@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandshake, faLightbulb, faLeaf, faFlask, faLink, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
 import MainBattery from "@/components/technology/MainBattery";
 import Good from "@/components/technology/Good";
+import GoodItems from "@/components/technology/GoodItems";
 const about = () => {
     return (
         <>
@@ -42,9 +42,33 @@ const about = () => {
             <section className="py-16 w-full gap-5 center gap-5 min-h-screen flex-col">
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl text-center my-5">電池燃料技術優勢在哪裡？</h1>
                 <Good></Good>
+                <GoodItems></GoodItems>
             </section>
             <section className="container py-16 w-full md:w-[80%] mx-auto ">
-            </section>
+                <h1 className="text-(--one) font-bold text-3xl xl:text-4xl text-center my-2">花更少，得更多</h1>
+                <p className="text-(--two) text-lg text-center font-bold mb-5">為氫能應用打造最佳經濟方案</p>
+                <div className="flex gap-5 md:flex-row flex-col">
+                    <article className="w-full relative h-100">
+                        <Image src="/images/technology6.png" fill alt="technology6" className="object-cover"></Image>
+                    </article>
+                    <article className="w-full flex justify-around flex-col gap-5">
+                        <div className="text-(--one) lg:w-[40%] w-[80%] mx-auto font-bold">
+                            <h1 className="text-4xl mb-2">30%<FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon></h1>
+                            <h1 className="text-3xl">製造成本降低</h1>
+                        </div>
+                        <div className="text-(--one) lg:w-[40%] w-[80%] mx-auto font-bold">
+                            <h1 className="text-4xl">3 – 5 元/kWh</h1>
+                            <h1 className="text-3xl my-2">使用成本</h1>
+                            <p className="text-(--two) text-lg">比鋰電池更具競爭力</p>
+                        </div>
+                    </article>
+                </div>
+                <div className="flex w-[80%] mx-auto gap-5 justify-center mt-5">
+                    <Link href={"/"}><Btn text={"相關產品"}></Btn ></Link>
+                    <Link href={"/"}><Btn text={"相關專利"}></Btn ></Link>
+                </div>
+            </section >
+
         </>
     )
 }

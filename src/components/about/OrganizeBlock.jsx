@@ -1,8 +1,9 @@
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faChessKing, faChartLine, faFlask, faCogs, faBullhorn, faFolderOpen, faClipboard, faMicroscope, faFlaskVial, faIndustry } from "@fortawesome/free-solid-svg-icons";
 import OrganizeItems from "./OrganizeItems";
 import { useState } from "react";
+import Btn from "../Btn";
 
 const OrganizeBlock = () => {
     const OrganizeDatas = {
@@ -45,7 +46,7 @@ const OrganizeBlock = () => {
                     研發部門
                 </h1>
             </div>
-            <div className=" overflow-hidden">
+            <div className="overflow-hidden h-auto">
                 <div className="flex">
                     <article className={`min-w-full transtion-all duration-500
                          ${ActiveTab == "main" ? 'translate-x-0' : '-translate-x-[100%]'}`}>
@@ -60,6 +61,11 @@ const OrganizeBlock = () => {
                             <OrganizeItems icon={faBullhorn} title={"行銷總監"} content={"主導市場拓展\n品牌與行銷策略"}></OrganizeItems>
                             <OrganizeItems icon={faFolderOpen} title={"行政總監"} content={"掌管財務\n人資與內部行政運作"}></OrganizeItems>
                         </div>
+                        <div className="center">
+                            <Link href="/technology">
+                                <Btn text={"地諾技術"}></Btn>
+                            </Link>
+                        </div>
                     </article>
                     <article className={`min-w-full transtion-all duration-500 flex flex-col gap-10 
                         ${ActiveTab == "deperment" ? '-translate-x-[100%]' : 'translate-x-[100%]'}`}>
@@ -72,8 +78,14 @@ const OrganizeBlock = () => {
                             <OrganizeItems icon={faCogs} title={"機構工程師"} content={"結構與製造模組設計與開發"}></OrganizeItems>
                             <OrganizeItems icon={faIndustry} title={"製程工程師"} content={"製程優化與量產技術提升"}></OrganizeItems>
                         </div>
+                        <div className="center">
+                            <Link href="/technology">
+                                <Btn text={"地諾技術"}></Btn>
+                            </Link>
+                        </div>
                     </article>
                 </div>
+
             </div>
         </div >
     )

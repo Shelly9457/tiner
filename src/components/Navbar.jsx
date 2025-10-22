@@ -18,10 +18,10 @@ const Navbar = () => {
     }, {
         id: 2,
         title: '技術與專利',
-        href: "/",
+        href: "/technology",
         submenu: [{
             name: "技術",
-            href: "/",
+            href: "/technology",
 
         }, {
             name: "專利",

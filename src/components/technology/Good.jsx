@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faFire, faBatteryFull, faHourglassHalf } from "@fortawesome/free-solid-svg-icons";
 export default function good() {

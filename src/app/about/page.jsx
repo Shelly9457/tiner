@@ -139,18 +139,13 @@ const about = () => {
                     </article>
                 </div>
             </section >
-            <section className="container py-16 w-[80%] mx-auto min-h-screen text-center">
+            <section className="container py-16 w-[80%] mx-auto h-auto text-center">
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl mb-5">公司組織架構</h1>
                 <p className="text-(--dark) text-lg mb-5">地諾科技的組織架構以高效運作為核心<br />
                     涵蓋董事會、研發管理、技術支援、市場推廣與行政管理等部門，<br />
                     確保公司在氫能產業中保持領先競爭力
                 </p>
                 <OrganizeBlock></OrganizeBlock>
-                <div className="center">
-                    <Link href="/technology">
-                        <Btn text={"地諾技術"}></Btn>
-                    </Link>
-                </div>
             </section>
 
         </>
