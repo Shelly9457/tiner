@@ -7,7 +7,7 @@ import Btn from "@/components/Btn";
 import MainBattery from "@/components/technology/MainBattery";
 import Good from "@/components/technology/Good";
 import GoodItems from "@/components/technology/GoodItems";
-const about = () => {
+const technology = () => {
     return (
         <>
             <section className="container py-16 w-full lg:w-[80%] mx-auto center gap-5 min-h-screen flex-col">
@@ -65,7 +65,7 @@ const about = () => {
                 </div>
                 <div className="flex w-[80%] mx-auto gap-5 justify-center mt-5">
                     <Link href={"/"}><Btn text={"相關產品"}></Btn ></Link>
-                    <Link href={"/"}><Btn text={"相關專利"}></Btn ></Link>
+                    <Link href={"/patent"}><Btn text={"相關專利"}></Btn ></Link>
                 </div>
             </section >
 
@@ -74,4 +74,4 @@ const about = () => {
 }
 
 
-export default about;
+export default technology;

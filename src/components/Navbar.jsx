@@ -25,7 +25,7 @@ const Navbar = () => {
 
         }, {
             name: "專利",
-            href: "/",
+            href: "/patent",
 
         }]
     }, {
@@ -52,7 +52,7 @@ const Navbar = () => {
             subsubmenu: [
                 {
                     name: "氫能動力系統",
-                    href: "/",
+                    href: "/powersystem",
                 },
                 {
                     name: "智慧城市與再生能源",
@@ -70,11 +70,7 @@ const Navbar = () => {
                 },
                 {
                     name: "固態儲氫技術",
-                    href: "/",
-                },
-                {
-                    name: "電解氣解設備",
-                    href: "/",
+                    href: "/store",
                 },
                 {
                     name: "氫能便攜式電源",
