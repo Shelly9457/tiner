@@ -12,7 +12,7 @@ const powersystem = () => {
             name: "無人機",
             desc: "結合高能燃料電池與固態儲氫技術，打造長續航氫能無人機",
             img: "/images/power2.png",
-            link: "/",
+            link: "/drones",
         },
         {
             name: "氫能載具",

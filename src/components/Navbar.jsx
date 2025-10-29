@@ -74,7 +74,7 @@ const Navbar = () => {
                 },
                 {
                     name: "氫能便攜式電源",
-                    href: "/",
+                    href: "/powersupply",
                 },
 
             ]

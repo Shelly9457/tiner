@@ -33,7 +33,7 @@ const store = () => {
                 img={"/images/store1.png"}
             >
             </SectionOne >
-            <section className="py-16 container center mx-auto flex-col min-h-screen">
+            <section className="py-16 container center mx-auto flex-col ">
                 <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center">技術組合</h1>
                 <p className="text-(--dark) text-lg text-center">
                     透過微型電池堆與固態儲氫瓶的整合，<br />
@@ -48,6 +48,9 @@ const store = () => {
                         )
                     })}
                 </div>
+            <Link href="/" className="mx-auto">
+                <Btn text={"其他應用"}></Btn>
+            </Link>
             </section>
         </>
     )
