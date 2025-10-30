@@ -82,7 +82,7 @@ const Navbar = () => {
     }, {
         id: 4,
         title: '產學合作',
-        href: "/",
+        href: "/cooperate",
     },]
     return (
         <div className="container w-[80%] mx-auto flex justify-between items-center">

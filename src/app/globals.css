@@ -7,7 +7,9 @@
   --two: #668BC4;
   --three: #A5BECF;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: var(--light);
   color: var(--foreground);
@@ -54,4 +56,38 @@ body {
 
 .linkbox a:hover::after {
   transform: scaleX(1);
+}
+
+.cooperate_icon_container1 {
+  animation: coursel1 9s linear infinite;
+}
+
+@keyframes coursel1 {
+  to {
+    transform: translateX(-125%);
+  }
+}
+
+.cooperate_icon_container2 {
+  animation: coursel2 12s linear infinite;
+}
+
+@keyframes coursel2 {
+  to {
+    transform: translateX(150%);
+  }
+}
+
+@media screen and (max-width: 770px) {
+  @keyframes coursel1 {
+    to {
+      transform: translateX(-250%);
+    }
+  }
+
+  @keyframes coursel2 {
+    to {
+      transform: translateX(300%);
+    }
+  }
 }

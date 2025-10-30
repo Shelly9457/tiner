@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           <HeaderSection></HeaderSection>
         </header>
         <main>{children}</main>
-        <footer className="bg-(--dark) py-5 text-(--light)">
+        <footer className="bg-[#263238] py-5 text-(--light)" id="footer">
           <div className="container mx-auto w-[80%]">
             <div className="flex items-center text-(--light)">
               <div className="bg-(--light) p-1 me-2 rounded-full w-[50px] h-[50px] center">
