@@ -7,9 +7,11 @@
   --two: #668BC4;
   --three: #A5BECF;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
   background: var(--light);
   color: var(--foreground);
@@ -89,5 +91,17 @@ body {
     to {
       transform: translateX(300%);
     }
+  }
+}
+
+.down {
+  animation: down 1s ease-in-out infinite alternate-reverse;
+  cursor: pointer;
+
+}
+
+@keyframes down {
+  100% {
+    transform: translateY(10px);
   }
 }

@@ -4,8 +4,8 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket, faVolumeXmark } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
-import FourItems from "@/components/drones/FourItems";
-import FeatureItems from "@/components/powersupply/FeatureItems";
+import FourItems from "@/components/application/drones/FourItems";
+import FeatureItems from "@/components/application/powersupply/FeatureItems";
 import SectionOne from "@/components/SectionOne";
 const drones = () => {
     const FeatureData = [
@@ -102,7 +102,7 @@ const drones = () => {
                 </article>
             </section>
             <section className="py-16 container center mx-auto flex-col">
-                <Link href="/" className="mx-auto">
+                <Link href="/powersystem#look" className="mx-auto">
                     <Btn text={"其他應用"}></Btn>
                 </Link>
             </section>

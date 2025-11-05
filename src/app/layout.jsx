@@ -28,10 +28,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <nav className="py-3 bg-(--dark)/80 backdrop-blur-lg text-(--light) fixed top-0 left-0 w-full z-98">
+          <nav className="py-3 bg-[#263238]/80 backdrop-blur-lg text-(--light) fixed top-0 left-0 w-full z-98">
             <Navbar></Navbar>
           </nav>
-          <HeaderSection></HeaderSection>
+          {/* <HeaderSection></HeaderSection> */}
         </header>
         <main>{children}</main>
         <footer className="bg-[#263238] py-5 text-(--light)" id="footer">

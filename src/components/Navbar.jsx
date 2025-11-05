@@ -14,7 +14,7 @@ const Navbar = () => {
     }, {
         id: 1,
         title: '關於我們',
-        href: "about",
+        href: "/about",
     }, {
         id: 2,
         title: '技術與專利',
@@ -37,11 +37,21 @@ const Navbar = () => {
             href: "/product",
             subsubmenu: [
                 {
-                    name: "產品1",
+                    name: "燃料電池發電系統",
                     href: "/",
+                    subsubsubmenu: [
+                        {
+                            name: "客製化關鍵元件",
+                            href: "/",
+                        },
+                        {
+                            name: "電池元件",
+                            href: "/",
+                        },
+                    ]
                 },
                 {
-                    name: "產品2",
+                    name: "廢棄物再生能源系統",
                     href: "/",
                 },
             ]
@@ -53,18 +63,32 @@ const Navbar = () => {
                 {
                     name: "氫能動力系統",
                     href: "/powersystem",
+                    subsubsubmenu: [
+                        {
+                            name: "無人機",
+                            href: "/powersystem/drones",
+                        },
+                        {
+                            name: "路上載具",
+                            href: "/powersystem/bus",
+                        },
+                        {
+                            name: "遠洋貨櫃",
+                            href: "/powersystem/boat",
+                        },
+                    ]
                 },
                 {
                     name: "智慧城市與再生能源",
-                    href: "/",
+                    href: "/revive",
                     subsubsubmenu: [
                         {
                             name: "楊梅汙水處理廠",
-                            href: "/",
+                            href: "/revive/sewage",
                         },
                         {
                             name: "畜牧場污泥轉氫能發電",
-                            href: "/",
+                            href: "/revive/fram",
                         },
                     ]
                 },
@@ -95,7 +119,7 @@ const Navbar = () => {
                 <span className="bg-(--light) w-full h-[2px]"></span>
                 <span className="bg-(--light) w-full h-[2px]"></span>
             </div>
-            <div className={`origin-left linkbox fixed center top-0 left-0  w-full h-[100vh] bg-(--dark)/90 backdrop-blur-xl  ${isopen ? 'translate-x-0' : '-translate-x-full'}`}>
+            <div className={`origin-left linkbox fixed center top-0 left-0  w-full h-[100vh] bg-[#263238]/90 backdrop-blur-xl  ${isopen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="container w-[80%] mx-auto flex">
                     {/* 第一層主選 */}
                     <ul className="flex flex-col w-1/3">
@@ -133,6 +157,7 @@ const Navbar = () => {
                                     <Link href={item.href} className="relative" onClick={() => setOpen(!isopen)}>
                                         {item.name}
                                     </Link>
+
                                 </li>
                             )
                         })}

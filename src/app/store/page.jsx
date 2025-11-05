@@ -4,8 +4,9 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
-import StoreItems from "@/components/store/StoreItems";
+import StoreItems from "@/components/application/store/StoreItems";
 import SectionOne from "@/components/SectionOne";
+import HeaderSection from "@/components/application/HeaderSection";
 const store = () => {
     const StroeDaa = [
         {
@@ -24,6 +25,8 @@ const store = () => {
     ]
     return (
         <>
+            <HeaderSection img={"/images/store1.png"} title={"安全儲氫，驅動未來"} desc={"高效、安全、可攜式氫氣儲存技術"}></HeaderSection>
+            <div id="look"></div>
             <SectionOne text={` 
                地諾科技的固態儲氫技術，\n
                 以「常溫、常壓、安全、高效」為核心理念，\n
@@ -33,6 +36,7 @@ const store = () => {
                 img={"/images/store1.png"}
             >
             </SectionOne >
+
             <section className="py-16 container center mx-auto flex-col ">
                 <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center">技術組合</h1>
                 <p className="text-(--dark) text-lg text-center">
@@ -48,9 +52,9 @@ const store = () => {
                         )
                     })}
                 </div>
-            <Link href="/" className="mx-auto">
-                <Btn text={"其他應用"}></Btn>
-            </Link>
+                <Link href="/" className="mx-auto">
+                    <Btn text={"其他應用"}></Btn>
+                </Link>
             </section>
         </>
     )

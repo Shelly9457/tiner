@@ -4,9 +4,10 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faFeatherAlt, faBatteryFull, faDroplet, faVolumeXmark } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
-import DataItems from "@/components/powersupply/DataItems";
-import FeatureItems from "@/components/powersupply/FeatureItems";
+import DataItems from "@/components/application/powersupply/DataItems";
+import FeatureItems from "@/components/application/powersupply/FeatureItems";
 import SectionOne from "@/components/SectionOne";
+import HeaderSection from "@/components/application/HeaderSection";
 const pwoersupply = () => {
     const Data = [
         [{
@@ -21,7 +22,7 @@ const pwoersupply = () => {
         },
         {
             name: "儲存溫度",
-            title: "-30~70 ﾟC",
+            title: "-30~70 度",
             ismain: false,
         },],
         [{
@@ -41,7 +42,7 @@ const pwoersupply = () => {
         },],
         [{
             name: "啟動溫度",
-            title: "-20~50ﾟC",
+            title: "-20~50度",
             ismain: false,
         },
         {
@@ -84,6 +85,8 @@ const pwoersupply = () => {
     ]
     return (
         <>
+            <HeaderSection img={"/images/supply1.png"} title={"隨行綠能，隨時啟動未來力量"} desc={"隨身攜帶的應急電備用電源"}></HeaderSection >
+            <div id="look"></div>
             <SectionOne text={` 
                 地諾科技氫能便攜式電源，\n
                 結合高效率燃料電池與固態儲氫技術，\n
@@ -122,7 +125,7 @@ const pwoersupply = () => {
                 </div>
             </section>
             <section className="py-16 container center mx-auto flex-col">
-                <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5">不只是電源，更是綠色行動的開始</h1>
+                <h1 className="text-(--one) font-bold xl:text-4xl md:text-3xl text-xl text-center mb-5">不只是電源，更是綠色行動的開始</h1>
                 <Link href="/" className="mx-auto">
                     <Btn text={"其他應用"}></Btn>
                 </Link>

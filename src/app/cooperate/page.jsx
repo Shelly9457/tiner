@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandshake, faSitemap, faLightbulb, faGlobeAmericas } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
-import FeatureItems from "@/components/powersupply/FeatureItems";
+import FeatureItems from "@/components/application/powersystem/powersupply/FeatureItems";
 import ProjectCards from "@/components/cooperate/ProjectCards";
 const cooperate = () => {
     const FeatureData = [

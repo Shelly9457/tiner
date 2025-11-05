@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
-import PowerItems from "@/components/powersystem/PowerItems";
+import PowerItems from "@/components/application/powersystem/PowerItems";
 import SectionOne from "@/components/SectionOne";
 const powersystem = () => {
     const PowerData = [
@@ -12,19 +12,19 @@ const powersystem = () => {
             name: "無人機",
             desc: "結合高能燃料電池與固態儲氫技術，打造長續航氫能無人機",
             img: "/images/power2.png",
-            link: "/drones",
+            link: "/powersystem/drones",
         },
         {
             name: "氫能載具",
             desc: "簡單介紹簡單介紹簡單介紹簡單介紹簡單介紹",
             img: "/images/power3.png",
-            link: "/",
+            link: "/powersystem/bus",
         },
         {
             name: "氫能船舶",
             desc: "簡單介紹簡單介紹簡單介紹簡單介紹簡單介紹",
             img: "/images/power4.png",
-            link: "/",
+            link: "/powersystem/boat",
         },
     ]
     return (
@@ -52,6 +52,7 @@ const powersystem = () => {
                     </article>
                 </div>
             </section>
+            <div id="look"></div>
             <section className="py-16 min-h-screen container mx-auto">
                 <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center">相關應用</h1>
                 {PowerData.map((item, index) => {
