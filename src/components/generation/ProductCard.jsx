@@ -1,8 +1,8 @@
 import Image from "next/image"
 export default function ProductCard({ name, desc, img }) {
     return (
-        <div className="rounded-lg lg:min-w-1/3 sm:min-w-1/2 min-w-full bg-[#FEFEFE] h-100 flex flex-col">
-            <div className="relative h-50 w-full">
+        <div className="rounded-lg lg:min-w-[calc(33.333%-7px)] sm:min-w-[calc(50%-7px)] me-[15px] min-w-full bg-[#FEFEFE] h-150 flex flex-col">
+            <div className="relative h-80 w-full">
                 <Image src={img} fill alt={name} className="object-cover rounded-t-lg"></Image>
             </div>
             <div className="center flex-col gap-4 px-3 py-5 text-(--one) flex-1">

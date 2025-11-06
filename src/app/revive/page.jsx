@@ -54,7 +54,7 @@ const revive = () => {
         },
         {
             name: "桃園汙水處理廠",
-            href: "/",
+            href: "/revive/fram",
             img: "/images/revive9.png",
             desc: "從廢污到綠氫，打造台灣首座「廢污資源化」示範廠",
         },
@@ -72,7 +72,7 @@ const revive = () => {
                             更能自我發電與儲能，邁向真正的零碳未來
                         </h2>
                         <Link href="#look">
-                            <Btn text={"相關應用"}></Btn>
+                            <Btn text={"相關案例"}></Btn>
                         </Link>
                     </article>
                     <article className="absolute md:-right-[20%] sm:-right-[30%] sm:block hidden top-[50%] -translate-y-[50%]">

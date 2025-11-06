@@ -71,6 +71,7 @@ const generation = () => {
                 <p className="text-(--dark) font-bold text-lg mt-3">將氫燃料轉化為電能，可應用於分散式電源、無人機、輕型載具等</p>
                 <ToggleProdect></ToggleProdect>
             </section>
+            <div id="look"></div>
             <section className="py-16 min-h-screen container mx-auto">
                 <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center">相關產品</h1>
                 {ProductData.map((item, index) => {

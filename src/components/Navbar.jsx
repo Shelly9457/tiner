@@ -38,21 +38,21 @@ const Navbar = () => {
             subsubmenu: [
                 {
                     name: "燃料電池發電系統",
-                    href: "/",
+                    href: "/generation",
                     subsubsubmenu: [
                         {
                             name: "客製化關鍵元件",
-                            href: "/",
+                            href: "/generation/keyproduct",
                         },
                         {
                             name: "電池元件",
-                            href: "/",
+                            href: "/generation/component",
                         },
                     ]
                 },
                 {
                     name: "廢棄物再生能源系統",
-                    href: "/",
+                    href: "/waste",
                 },
             ]
 

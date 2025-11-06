@@ -7,7 +7,7 @@ import Btn from "@/components/Btn";
 const sewage = () => {
     return (
         <>
-            <section className="py-16 container min-h-screen lg:w-[80%] w-full mx-auto">
+            <section className="py-16 container  lg:w-[80%] w-full mx-auto">
                 <div className="flex gap-8 md:flex-row flex-col">
                     <article className="md:w-1/2 w-full">
                         <div className="relative h-80 w-full">
@@ -61,7 +61,7 @@ const sewage = () => {
                 </article>
             </section>
             <section className="pb-16 center container w-full mx-auto">
-                <Link href="/">
+                <Link href="/revive#look">
                     <Btn text={"其他案例"}></Btn>
                 </Link>
             </section >

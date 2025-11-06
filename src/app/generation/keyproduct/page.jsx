@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
@@ -35,14 +35,28 @@ const keyproduct = () => {
         },
     ]
     const [currentIndex, setCurrentIndex] = useState(0)
-    let slideWidth = 36
-    const totalSlides = 5
-    let showSlides = 3
-    if (window.innerWidth <= 1024) {
-        showSlides = 2
-    }
+    const [showSlides, setShowSlides] = useState(3)
+    const totalSlides = Products.length
+    let slideWidth = 100 / showSlides + 2
+    useEffect(() => {
+        const updateSlides = () => {
+            if (window.innerWidth <= 768) {
+                setShowSlides(1);
+            } else if (window.innerWidth <= 1024) {
+                setShowSlides(2);
+            } else {
+                setShowSlides(3);
+            }
+        };
+
+        updateSlides(); // 一開始就判斷一次
+        window.addEventListener("resize", updateSlides); // 當視窗變化時重新判斷
+
+        // 清除監聽器，避免元件被移除時出錯
+        return () => window.removeEventListener("resize", updateSlides);
+    }, []);
     const nextSlide = () => {
-        setCurrentIndex(Math.min(currentIndex + 1, totalSlides - showSlides - 1));
+        setCurrentIndex(Math.min(currentIndex + 1, totalSlides - showSlides));
     };
     const prevSlide = () => {
         setCurrentIndex(Math.max(currentIndex - 1, 0));
@@ -74,14 +88,14 @@ const keyproduct = () => {
                     而是可被量產的高效現實
                 </h1>
             </section>
-            <section className="py-16 container center mx-auto flex-col min-h-screen">
+            <section className="py-16 container center mx-auto flex-col">
                 <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center">關鍵元件</h1>
                 <div className="center sm:w-[80%] w-full mx-auto">
                     <FontAwesomeIcon icon={faChevronLeft} className="text-(--one) me-3 cursor-pointer font-bold z-99 text-xl" onClick={prevSlide}></FontAwesomeIcon>
-                    <div className="overflow-hidden flex-1">
+                    <div className="overflow-hidden flex-1 w-full px-3">
                         <div className="flex w-full duration-500 transition-transform ease-in-out"
                             style={{ transform: `translateX(-${currentIndex * slideWidth}%)` }}>
-                            <div className="gap-5 center items-center my-10 w-full" >
+                            <div className="flex items-center my-10 w-full" >
                                 {Products.map((item, index) => {
                                     return (
                                         <ProductCard name={item.name} desc={item.desc} img={item.img} key={index}></ProductCard>
@@ -93,10 +107,11 @@ const keyproduct = () => {
                     <FontAwesomeIcon icon={faChevronRight} className="text-(--one) ms-3 cursor-pointer font-bold z-99 text-xl" onClick={nextSlide}></FontAwesomeIcon>
                 </div>
             </section>
-
-            <Link href="/generation" className="mx-auto">
-                <Btn text={"其他產品"}></Btn>
-            </Link>
+            <section className="pb-16 container center mx-auto flex-col">
+                <Link href="/generation#look" className="mx-auto">
+                    <Btn text={"其他產品"}></Btn>
+                </Link>
+            </section>
 
         </>
     )

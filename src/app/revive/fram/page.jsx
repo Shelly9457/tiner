@@ -63,7 +63,7 @@ const fram = () => {
                 </article>
             </section>
             <section className="pb-16 center container w-full mx-auto">
-                <Link href="/">
+                <Link href="/revive#look">
                     <Btn text={"其他案例"}></Btn>
                 </Link>
             </section >
