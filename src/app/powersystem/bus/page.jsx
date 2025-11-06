@@ -20,8 +20,6 @@ const bus = () => {
             icon: faGasPump,
         },
 
-
-
     ]
     return (
         <>

@@ -85,7 +85,6 @@ const OrganizeBlock = () => {
                         </div>
                     </article>
                 </div>
-
             </div>
         </div >
     )

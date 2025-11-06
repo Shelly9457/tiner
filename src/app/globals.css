@@ -93,15 +93,3 @@ body {
     }
   }
 }
-
-.down {
-  animation: down 1s ease-in-out infinite alternate-reverse;
-  cursor: pointer;
-
-}
-
-@keyframes down {
-  100% {
-    transform: translateY(10px);
-  }
-}

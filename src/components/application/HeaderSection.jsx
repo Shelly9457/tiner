@@ -14,11 +14,10 @@ export default function HeaderSection({ img, desc, title }) {
                     <div className="md:w-[80%] ms-auto">
                         <h1 className="text-(--one) lg:text-4xl text-2xl font-bold">{title}</h1>
                         <h1 className="md:text-xl text-md">{desc}</h1>
-                        <a href="#look" className="center block mx-auto mt-8 text-xl down">
-                            <FontAwesomeIcon icon={faArrowDown} ></FontAwesomeIcon>
+                        <a href="#look" className="center block mx-auto mt-8 text-xl animate-bounce border-(--one) border-2 rounded-full w-10 h-10">
+                            <FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon>
                         </a>
                     </div>
-
                 </article>
             </div>
         </section>
