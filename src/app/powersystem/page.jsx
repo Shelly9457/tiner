@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
 import PowerItems from "@/components/application/powersystem/PowerItems";
-import SectionOne from "@/components/SectionOne";
+import HeaderSlider from "@/components/HeaderSlider";
+
 const powersystem = () => {
     const PowerData = [
         {
@@ -27,8 +28,15 @@ const powersystem = () => {
             link: "/powersystem/boat",
         },
     ]
+    const homeSlides = [
+        { img: "/images/powersystemSlide1.png" },
+        { img: "/images/powersystemSlide2.png" },
+        { img: "/images/powersystemSlide3.png" },
+    ];
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"以氫為動力，驅動未來的能源革命"} desc={"智慧整合燃料電池與氫能儲存技術，打造高效動力核心"} />
+
             <section className="flex py-16 min-h-screen">
                 <div className="container bg-(--three) sm:w-3/4 w-full me-auto flex relative">
                     <article className="md:w-[90%] w-full ms-auto py-16 flex flex-col justify-around sm:items-start items-center">

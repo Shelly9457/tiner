@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faBatteryFull, faGasPump } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
 import IconBox from "@/components/IconBox";
+import HeaderSlider from "@/components/HeaderSlider";
+
 const bus = () => {
     const IconItems = [
         {
@@ -19,10 +21,16 @@ const bus = () => {
             name: `70 MPa 185升高壓氣瓶\n6支（44.4 kg 氫氣）`,
             icon: faGasPump,
         },
-
     ]
+    const homeSlides = [
+        { img: "/images/busSlide1.png" },
+        { img: "/images/busSlide2.png" },
+        { img: "/images/busSlide3.png" },
+    ];
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"零碳前行，啟動城市新循環"} desc={"氫能動力載具"} />
+
             <section className="py-16 lg:w-[80%] w-full mx-auto ">
                 <article className="w-full flex items-center lg:flex-row flex-col mb-5 gap-3">
                     <div className="relative h-80 lg:w-2/3 w-full">

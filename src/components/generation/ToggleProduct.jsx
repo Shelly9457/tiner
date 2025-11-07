@@ -33,9 +33,6 @@ export default function ToggleProdect() {
                     </div>
                 </div>
             </div>
-            {/* <div className="flex">
-                <h1 className={`text-(--one) font-bold text-2xl border-1 ${isActiVe == "PEMFC" ? "border-(--one)" : "border-tr"}`}>PEMFC發電系統</h1>
-            </div> */}
         </article>
     )
 }

@@ -6,6 +6,8 @@ import { faMoneyBill1, faBatteryFull, faLeaf } from "@fortawesome/free-solid-svg
 import Btn from "@/components/Btn";
 import IconBox from "@/components/IconBox";
 import SectionOne from "@/components/SectionOne";
+import HeaderSlider from "@/components/HeaderSlider";
+
 
 const boat = () => {
     const IconItems = [
@@ -22,12 +24,15 @@ const boat = () => {
             name: `碳排放減少50%以上`,
             icon: faLeaf,
         },
-
-
-
     ]
+    const homeSlides = [
+        { img: "/images/boatSlide1.png" },
+        { img: "/images/boatSlide2.png" },
+        { img: "/images/boatSlide3.png" },
+    ];
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"以氫為舵，啟航綠色未來"} desc={"以科技實現海運減碳，領航全球綠色轉型"} />
             <SectionOne text={` 
                     地諾科技以氫能為核心，\n
                     打造新一代「遠洋貨輪氫能動力系統」\n

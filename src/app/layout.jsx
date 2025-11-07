@@ -4,7 +4,7 @@ import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { faLocationDot, faFlask, faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "@/components/Navbar";
-import HeaderSection from "@/components/HeaderSection";
+import HeaderSection from "@/components/HeaderSlider";
 import FooterItems from "@/components/FooterItems";
 // 定義字型變數
 const geistSans = Geist({

@@ -6,6 +6,7 @@ import { faHandshake, faSitemap, faLightbulb, faGlobeAmericas } from "@fortaweso
 import Btn from "@/components/Btn";
 import FeatureItems from "@/components/application/powersupply/FeatureItems";
 import ProjectCards from "@/components/cooperate/ProjectCards";
+import HeaderSlider from "@/components/HeaderSlider";
 const cooperate = () => {
     const FeatureData = [
         {
@@ -62,8 +63,15 @@ const cooperate = () => {
         "/images/cooperate_icon10.png",
         "/images/cooperate_icon11.png",
     ]
+    const homeSlides = [
+        { img: "/images/cooperateSlide1.png" },
+        { img: "/images/cooperateSlide2.png" },
+        { img: "/images/cooperateSlide3.png" },
+    ];
+
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"鏈結學術 × 產業 × 政策"} desc={"Tiner產學 -"} />
             <section className="py-16 bg-[url('/images/cooperate_bg1.png')] bg-cover bg-center bg-no-repeat">
                 <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5">攜手案例</h1>
                 <article className="grid md:grid-cols-2 grid-cols-1 mx-auto gap-8 sm:w-[80%] w-full">

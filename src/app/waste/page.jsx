@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
 import Btn from "@/components/Btn";
 import Card from "@/components/waste/Card";
@@ -50,10 +51,12 @@ const waste = () => {
             img: "/images/waste6.png",
         },
     ]
+    const [ActiveTab, setActiveTab] = useState("make")
+
     return (
         <>
             <section className="py-16 container center mx-auto flex-col lg:w-[80%] w-full">
-                <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center">
+                <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center mb-10">
                     從生物質到氫能，地諾科技以創新轉化技術<br />
                     實現廢棄物能源化、淨零排放的永續藍圖
                 </h1>
@@ -64,25 +67,43 @@ const waste = () => {
                     將農業廢棄物、污泥與有機物轉化為氫氣與甲烷，<br />
                     實現資源再利用與綠色能源循環
                 </h1>
-            </section>
-            <section className="py-16 container center mx-auto flex-col lg:w-[80%] w-full">
-                <div className="flex w-full gap-8 lg:flex-row flex-col">
-                    <article className="lg:w-1/2 w-full flex flex-col justify-around font-bold ">
-                        <h1 className="text-(--one) xl:text-4xl text-3xl mb-5">PEMFC石墨流道板</h1>
-                        <h1 className="text-xl text-(--dark)">
-                            燃料電池的關鍵部件，<br />
-                            主要用於分隔氫氣和氧氣並傳導電流，<br />
-                            同時起到分配氣體、導熱和支撐作用
+                <article className="mt-5 w-full overflow-hidden">
+                    <div className="md:text-2xl text-lg font-bold center gap-8 mb-10">
+                        <h1 onClick={() => setActiveTab("make")}
+                            className={`text-(--one) border-b-2 pb-2 transtion-all duration-500 cursor-pointer
+                                    ${ActiveTab === "make" ? 'border-b-(--one)' : 'border-b-transparent text-(--two)'}`}>
+                            材料類
                         </h1>
-
-                    </article>
-                    <article className="lg:w-1/2 w-full">
-                        <div className="relative h-100 w-full">
-                            <Image src="/images/component4.png" fill alt="component1" className="object-cover"></Image>
+                        <h1 onClick={() => setActiveTab("component")}
+                            className={`text-(--one) border-b-2 pb-2 transtion-all duration-500 cursor-pointer
+                                    ${ActiveTab === "component" ? 'border-b-(--one)' : 'border-b-transparent text-(--two)'}`}>
+                            元件類
+                        </h1>
+                    </div>
+                    <div className="flex">
+                        <div className={`min-w-full transtion-all duration-500 center sm:gap-5  sm:flex-row flex-col
+                                        ${ActiveTab == "make" ? 'translate-x-0' : '-translate-x-[100%]'}`}>
+                            <div className="grid md:grid-cols-2 grid-col-1 gap-5">
+                                {MakeData.map((item, index) => {
+                                    return (
+                                        <Card name={item.name} desc={item.desc} img={item.img} key={index}></Card>
+                                    )
+                                })}
+                            </div>
                         </div>
-                    </article>
-                </div>
-            </section>
+                        <div className={`min-w-full transtion-all duration-500 center gap-5 
+                                        ${ActiveTab == "component" ? '-translate-x-[100%]' : ''}`}>
+                            <div className="grid md:grid-cols-2 grid-col-1 gap-5">
+                                {ComponentData.map((item, index) => {
+                                    return (
+                                        <Card name={item.name} desc={item.desc} img={item.img} key={index}></Card>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section >
             <section className="py-16 container mx-auto w-[80%] center flex-col">
                 <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center">沼渣消化系統</h1>
                 <h1 className="text-(--one) font-bold xl:text-lg text-md text-center">
@@ -97,7 +118,7 @@ const waste = () => {
                     })
                     }
                 </article>
-                <Link href="/generation" className="mx-auto">
+                <Link href="/generation#look" className="mx-auto">
                     <Btn text={"其他產品"}></Btn>
                 </Link>
             </section>

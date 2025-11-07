@@ -55,7 +55,7 @@ const components = () => {
                 </article>
             </section>
             <section className="py-16 container center mx-auto flex-col lg:w-[80%] w-full">
-                <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5">新一代管式電池</h1>
+                <h1 className="text-(--one) font-bold xl:text-4xl text-2xl text-center mb-5">新一代管式電池</h1>
                 <div className="flex w-full gap-8 lg:flex-row flex-col">
                     <article className="lg:w-1/2 w-full">
                         <div className="relative xl:h-80 h-50 w-full">

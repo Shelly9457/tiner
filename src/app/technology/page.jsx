@@ -7,9 +7,17 @@ import Btn from "@/components/Btn";
 import MainBattery from "@/components/technology/MainBattery";
 import Good from "@/components/technology/Good";
 import GoodItems from "@/components/technology/GoodItems";
+import HeaderSlider from "@/components/HeaderSlider";
 const technology = () => {
+    const homeSlides = [
+        { img: "/images/technologySlide1.png" },
+        { img: "/images/technologySlide2.png" },
+        { img: "/images/technologySlide3.png" },
+    ];
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"以創新技術，實現零碳能源新紀元"} desc={"Tiner技術 -"} />
+
             <section className="container py-16 w-full lg:w-[80%] mx-auto center gap-5 min-h-screen flex-col">
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl">主要燃料電池</h1>
                 <MainBattery></MainBattery>

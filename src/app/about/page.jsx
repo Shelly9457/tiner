@@ -8,9 +8,16 @@ import "./about.css";
 import FourItems from "@/components/about/FourItems";
 import OrganizeBlock from "@/components/about/OrganizeBlock";
 import Btn from "@/components/Btn";
+import HeaderSlider from "@/components/HeaderSlider";
 const about = () => {
+    const homeSlides = [
+        { img: "/images/aboutSlide1.png" },
+        { img: "/images/aboutSlide2.png" },
+        { img: "/images/aboutSlide3.png" },
+    ];
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"成就淨零未來，從我們開始"} desc={"關於Tiner -"} />
             <section className="container py-16 w-full sm:w-[80%] mx-auto center gap-5 min-h-screen flex-col">
                 <div className="w-full md:flex-row flex-col center md:gap-8 gap-2 ">
                     <article className="md:w-1/2 w-full center flex-col text-center">

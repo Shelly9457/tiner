@@ -7,6 +7,8 @@ import Btn from "@/components/Btn";
 import FourItems from "@/components/application/drones/FourItems";
 import FeatureItems from "@/components/application/powersupply/FeatureItems";
 import SectionOne from "@/components/SectionOne";
+import HeaderSlider from "@/components/HeaderSlider";
+
 const drones = () => {
     const FeatureData = [
         {
@@ -46,8 +48,15 @@ const drones = () => {
             img: "/images/drones6.png"
         },
     ]
+    const homeSlides = [
+        { img: "/images/dronesSlide1.png" },
+        { img: "/images/dronesSlide2.png" },
+        { img: "/images/dronesSlide3.png" },
+    ];
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"以氫為翼，啟航未來天空"} desc={"高效能、長續航、低碳排的無人機動力解決方案"} />
+
             <SectionOne text={` 
                 地諾科技的氫能無人機動力系統，\n
                 結合高效燃料電池與安全儲氫技術提供\n
