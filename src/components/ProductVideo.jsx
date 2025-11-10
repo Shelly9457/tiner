@@ -7,8 +7,8 @@ export default function ProductVideo() {
 
     // 🔹 三個語言的影片檔案
     const videos = {
-        zh: "/images/product_chinese.mp4",
-        en: "/images/prduct_english.mp4",
+        zh: "https://dl.dropboxusercontent.com/scl/fi/3f3yjkq1gtcu5t82ybwvh/product_chinese.mp4?rlkey=8bjouvqs08j9plcvvuju5o6md&st=5vu4a0ri&raw=1",
+        en: "https://dl.dropboxusercontent.com/scl/fi/pkgtkfxub9u8m61y9htjk/prduct_english.mp4?rlkey=8z87u91t9tbs3jrfij4rgu1sy&st=y2w8ckyb&raw=1",
     };
     useEffect(() => {
         const video = videoRef.current;
@@ -28,6 +28,7 @@ export default function ProductVideo() {
                 preload="auto"
                 playsInline
                 autoPlay
+                muted
                 loop
                 controls // 你想讓使用者手動控制也可以加上這個
             >

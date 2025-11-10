@@ -38,7 +38,7 @@ export default function Home() {
 					loop
 					playsInline
 				>
-					<source src="/images/app_chinese.mp4" type="video/mp4" />
+					<source src="https://dl.dropboxusercontent.com/scl/fi/36gn5cys401drnjb9xfwc/app_chinese.mp4?rlkey=62sv345ffjzhjts48xklte56c&raw=1" type="video/mp4" />
 				</video>
 				<article className="absolute inset-0 flex flex-col justify-center items-center text-(--light) font-bold bg-black/40">
 					<h1 className="xl:text-6xl text-4xl">TINER</h1>

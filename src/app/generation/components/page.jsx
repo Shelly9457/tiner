@@ -41,7 +41,7 @@ const components = () => {
     ]
     return (
         <>
-            <HeaderVideo title={"高效能的氫能核心動力"} desc={"電池元件"} video={"/images/product_chinese.mp4"}></HeaderVideo>
+            <HeaderVideo title={"高效能的氫能核心動力"} desc={"電池元件"} video={"https://dl.dropboxusercontent.com/scl/fi/3f3yjkq1gtcu5t82ybwvh/product_chinese.mp4?rlkey=8bjouvqs08j9plcvvuju5o6md&st=5vu4a0ri&raw=1"}></HeaderVideo>
 
             <section className="py-16 container center mx-auto flex-col lg:w-[80%] w-full">
                 <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center">
