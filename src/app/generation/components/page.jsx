@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faShieldAlt, faMoneyBillAlt } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
 import IconBox from "@/components/IconBox";
+import HeaderVideo from "@/components/HeaderVideo";
 const components = () => {
     const Products = [
         {
@@ -40,6 +41,8 @@ const components = () => {
     ]
     return (
         <>
+            <HeaderVideo title={"高效能的氫能核心動力"} desc={"電池元件"} video={"/images/product_chinese.mp4"}></HeaderVideo>
+
             <section className="py-16 container center mx-auto flex-col lg:w-[80%] w-full">
                 <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center">
                     地諾科技深耕燃料電池核心技術，<br />

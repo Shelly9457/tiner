@@ -37,7 +37,7 @@ const cooperate = () => {
                     將污泥轉化為氫氣與電能，達成「廢棄物零輸出」\n
                     與「永續淨零」的雙重目標`,
             img: "/images/cooperate_project1.jpg",
-            href: "/",
+            href: "/revive/sewage",
         },
         {
             name: "民營畜牧場",
@@ -45,7 +45,8 @@ const cooperate = () => {
                     電池發電技術，不僅減少環境污染，\n
                     更為農村能源轉型開創新模式。`,
             img: "/images/cooperate_project2.png",
-            href: "/",
+            href: "/revive/fram",
+
         },
     ]
     const CooperateIcons1 = [
@@ -147,13 +148,14 @@ const cooperate = () => {
                     <p className="text-(--dark) lg:text-lg text-md">我們不僅提供技術授權，共享燃料電池與氫能儲存技術，更積極與合作夥伴進行聯合研發，開發新一代氫能應用。同時，我們推動產業聯盟，串聯上下游資源，建立完整的氫能供應鏈，並透過商業夥伴關係，共同打造加氫站與智慧能源解決方案，加速氫能技術的市場落地與普及</p>
                 </article>
             </section>
-            <section className="pt-16 w-full ">
-                <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5">想要成為我們的合作夥伴嗎？</h1>
-                <article className="bg-[url('/images/cooperate_bg2.png')] bg-cover bg-center bg-no-repeat h-63 w-full center">
-                    <a href="#footer">
+            <section className="pt-16 w-full relative h-100 overflow-hidden center flex-col">
+                <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-50">想要成為我們的合作夥伴嗎？</h1>
+                <div className="bg-[#263238] w-[110%] rounded-[100%] h-100 -translate-x-[50%] left-[50%] absolute -bottom-[60%] flex justify-center">
+                    <a href="#footer" className="mt-20">
                         <Btn text={"加入我們"}></Btn>
                     </a>
-                </article>
+                </div>
+                {/* </article> */}
             </section >
         </>
     )

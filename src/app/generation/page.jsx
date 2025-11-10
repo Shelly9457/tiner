@@ -7,6 +7,7 @@ import Btn from "@/components/Btn";
 import FeatureItems from "@/components/application/powersupply/FeatureItems";
 import ToggleProdect from "@/components/generation/ToggleProduct";
 import PowerItems from "@/components/application/powersystem/PowerItems";
+import HeaderVideo from "@/components/HeaderVideo";
 const generation = () => {
     const MakeData = [
         {
@@ -47,6 +48,7 @@ const generation = () => {
     ]
     return (
         <>
+            <HeaderVideo title={"智慧能源的核心，來自燃料電池的創新力量"} desc={"燃料電池發電系統"} video={"/images/product_chinese.mp4"}></HeaderVideo>
             <section className="py-16 container center mx-auto flex-col ">
                 <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center">
                     地諾科技致力於推動燃料電池發電系統的革新，<br />

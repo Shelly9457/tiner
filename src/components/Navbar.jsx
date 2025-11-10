@@ -111,7 +111,9 @@ const Navbar = () => {
     return (
         <div className="container w-[80%] mx-auto flex justify-between items-center">
             <div className="flex items-center">
-                <Image src="/images/logo.png" width={50} height={50} alt="logo"></Image>
+                <Link href="/">
+                    <Image src="/images/logo.png" width={50} height={50} alt="logo"></Image>
+                </Link>
                 <h1>Tiner</h1>
             </div>
             <div className={`hamburger w-[60px] h-[40px] flex flex-col justify-between items-center py-2 px-3 cursor-pointer z-99 ${isopen ? 'active center' : ''}`} onClick={() => setOpen(!isopen)}>
