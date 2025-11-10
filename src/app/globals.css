@@ -93,3 +93,13 @@ body {
     }
   }
 }
+
+.indexrun {
+  animation: indexrun linear infinite 9s;
+}
+
+@keyframes indexrun {
+  to {
+    transform: translateX(-205.9%);
+  }
+}

@@ -1,4 +1,6 @@
+
 const { FontAwesomeIcon } = require("@fortawesome/react-fontawesome")
+
 const FooterItems = ({ icon, content }) => {
     return (
         <div className="flex items-center my-3" >
