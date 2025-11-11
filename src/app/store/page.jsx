@@ -52,7 +52,7 @@ const store = () => {
                         )
                     })}
                 </div>
-                <Link href="/" className="mx-auto">
+                <Link href="/application" className="mx-auto">
                     <Btn text={"其他應用"}></Btn>
                 </Link>
             </section>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Btn from "@/components/Btn";
 import Card from "@/components/waste/Card";
+import HeaderSlider from "@/components/HeaderSlider";
 const waste = () => {
     const MakeData = [
         {
@@ -52,9 +53,15 @@ const waste = () => {
         },
     ]
     const [ActiveTab, setActiveTab] = useState("make")
+    const homeSlides = [
+        { img: "/images/wasteSlide1.png" },
+        { img: "/images/wasteSlide2.png" },
+        { img: "/images/wasteSlide3.png" },
+    ];
 
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"讓廢棄再生，讓能源循環"} desc={"生物質轉化與沼渣消化"} />
             <section className="py-16 container center mx-auto flex-col lg:w-[80%] w-full">
                 <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center mb-10">
                     從生物質到氫能，地諾科技以創新轉化技術<br />

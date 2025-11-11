@@ -43,6 +43,10 @@ body {
   transform: rotateZ(315deg);
 }
 
+.linkbox a {
+  position: relative;
+}
+
 .linkbox a::after {
   content: "";
   background-color: var(--light);

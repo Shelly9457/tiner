@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket, faVolumeXmark } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
+import HeaderVideo from "@/components/HeaderVideo";
 const revive = () => {
     const CardData = [
         {
@@ -61,6 +62,7 @@ const revive = () => {
     ]
     return (
         <>
+            <HeaderVideo title={"從廢棄到發電 打造永續城市新動能"} desc={"智慧城市 × 再生能源"} video={"https://dl.dropboxusercontent.com/scl/fi/36gn5cys401drnjb9xfwc/app_chinese.mp4?rlkey=62sv345ffjzhjts48xklte56c&raw=1"}></HeaderVideo>
             <section className="flex py-16 min-h-screen">
                 <div className="container bg-(--three) sm:w-3/4 w-full me-auto flex relative">
                     <article className="md:w-[90%] w-full ms-auto py-16 flex flex-col justify-around sm:items-start items-center">
