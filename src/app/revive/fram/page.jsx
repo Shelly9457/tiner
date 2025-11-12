@@ -4,9 +4,17 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket, faVolumeXmark } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
+import HeaderSlider from "@/components/HeaderSlider";
+
 const fram = () => {
+    const homeSlides = [
+        { img: "/images/framSlide1.png" },
+        { img: "/images/framSlide2.png" },
+        { img: "/images/framSlide3.png" },
+    ];
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"民營氫能畜牧場"} desc={"利用生質能技術，將污水處理廠污泥轉化為氫能發電"} />
             <section className="md:py-16 pb-16 container min-h-screen lg:w-[80%] w-full mx-auto">
                 <div className="flex gap-8 md:flex-row flex-col">
                     <article className="md:w-1/2 w-full">
