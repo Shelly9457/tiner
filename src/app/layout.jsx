@@ -30,14 +30,14 @@ export const metadata = {
     locale: "zh_TW",
     type: "website",
   },
-  other: {
-    "google-site-verification": "google-site-verification=IIdcfJ8hfzwmT9yFBCqF9aTHtsCmNx_WH4wof6sze1Q",
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="ezdpaljlqz_oLWWtLle88rg7_svD6IaYwpAXILigqw4" />
+      </head>
       <body>
         <header>
           <nav className="py-3 bg-[#263238]/80 backdrop-blur-lg text-(--light) fixed top-0 left-0 w-full z-98">
