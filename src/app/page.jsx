@@ -94,7 +94,7 @@ export default function Home() {
 							<IndexIconCard></IndexIconCard>
 						</div>
 					</div>
-					<Link href="\">
+					<Link href="\application">
 						<Btn text={"了解更多"}></Btn>
 					</Link>
 				</article>

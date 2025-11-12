@@ -4,9 +4,17 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket, faVolumeXmark } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
+import HeaderSlider from "@/components/application/HeaderSection";
+
 const sewage = () => {
+    const homeSlides = [
+        { img: "/images/sewageSlide1.png" },
+        { img: "/images/sewageSlide2.png" },
+        { img: "/images/sewageSlide3.png" },
+    ];
     return (
         <>
+            <HeaderSlider slides={homeSlides} title={"楊梅污水處理廠"} desc={"全台首座以「廢污資源化」為核心的綠氫示範廠"} />
             <section className="py-16 container  lg:w-[80%] w-full mx-auto">
                 <div className="flex gap-8 md:flex-row flex-col">
                     <article className="md:w-1/2 w-full">

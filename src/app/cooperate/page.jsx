@@ -36,7 +36,7 @@ const cooperate = () => {
             desc: `透過厭氧發酵與甲烷重整技術，\n
                     將污泥轉化為氫氣與電能，達成「廢棄物零輸出」\n
                     與「永續淨零」的雙重目標`,
-            img: "/images/cooperate_project1.jpg",
+            img: "/images/cooperate_project1.png",
             href: "/revive/sewage",
         },
         {
@@ -155,7 +155,6 @@ const cooperate = () => {
                         <Btn text={"加入我們"}></Btn>
                     </a>
                 </div>
-                {/* </article> */}
             </section >
         </>
     )
