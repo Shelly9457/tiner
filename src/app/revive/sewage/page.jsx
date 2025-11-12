@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket, faVolumeXmark } from "@fortawesome/free-solid-svg-icons";
 import Btn from "@/components/Btn";
-import HeaderSlider from "@/components/application/HeaderSection";
+import HeaderSlider from "@/components/HeaderSlider";
 
 const sewage = () => {
     const homeSlides = [
