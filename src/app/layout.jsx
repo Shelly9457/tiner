@@ -19,8 +19,20 @@ const geistMono = Geist_Mono({
 
 // SEO 設定區
 export const metadata = {
-  title: "tiner",
-  description: "地諾科技股份有限公司",
+  title: "Tiner 氫能科技 | 創新能源未來",
+  description: "Tiner 專注於燃料電池、氫能應用與再生能源解決方案，推動綠色永續未來。",
+  keywords: ["氫能", "燃料電池", "再生能源", "Tiner", "綠色科技", "地諾"],
+  openGraph: {
+    title: "Tiner 氫能科技 | 創新能源未來",
+    description: "Tiner 專注於燃料電池、氫能應用與再生能源解決方案。",
+    url: "tiner-self.vercel.app",
+    siteName: "Tiner",
+    locale: "zh_TW",
+    type: "website",
+  },
+  other: {
+    "google-site-verification": "google-site-verification=IIdcfJ8hfzwmT9yFBCqF9aTHtsCmNx_WH4wof6sze1Q",
+  },
 };
 
 export default function RootLayout({ children }) {
