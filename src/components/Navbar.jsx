@@ -104,11 +104,11 @@ const Navbar = () => {
 
     return (
         <div className="container w-[80%] mx-auto flex justify-between items-center">
-            <div className="flex items-center">
+            <div className="flex items-center gap-5">
                 <Link href="/">
                     <Image src="/images/logo.png" width={50} height={50} alt="logo" />
                 </Link>
-                <h1>Tiner</h1>
+                <h1 className="tracking-widest">TINER</h1>
             </div>
 
             {/* 🔹 漢堡按鈕 */}

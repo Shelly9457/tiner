@@ -49,13 +49,13 @@ const revive = () => {
     const Projects = [
         {
             name: "民營畜農場",
-            href: "/revive/sewage",
+            href: "/revive/fram",
             img: "/images/revive8.png",
             desc: "從農業廢棄物到清潔電能，實現能源自給自足",
         },
         {
             name: "桃園汙水處理廠",
-            href: "/revive/fram",
+            href: "/revive/sewage",
             img: "/images/revive9.png",
             desc: "從廢污到綠氫，打造台灣首座「廢污資源化」示範廠",
         },

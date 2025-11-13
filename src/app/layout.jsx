@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 // SEO 設定區
 export const metadata = {
-  title: "Tiner 氫能科技 | 創新能源未來",
+  title: "TINER 氫能科技 | 創新能源未來",
   description: "Tiner 專注於燃料電池、氫能應用與再生能源解決方案，推動綠色永續未來。",
   keywords: ["氫能", "燃料電池", "再生能源", "Tiner", "綠色科技", "地諾"],
   openGraph: {
@@ -52,10 +52,9 @@ export default function RootLayout({ children }) {
               <div className="bg-(--light) p-1 me-2 rounded-full w-[50px] h-[50px] center">
                 <Image src="/images/logo.png" width={50} height={50} alt="logo"></Image>
               </div>
-              <h1>Tiner</h1>
+              <h1 className="tracking-widest">TINER</h1>
             </div>
-            <FooterItems icon={faLocationDot} content="總部： 327007桃園市新屋區華興路690巷199弄85號" />
-            <FooterItems icon={faFlask} content="研發中心： 新竹市東區光復路二段 101 號（清華大學創新育成大樓 R719）" />
+            <FooterItems icon={faLocationDot} content="27007桃園市新屋區華興路690巷199弄85號" />
             <FooterItems icon={faEnvelope} content="tiner20231020@gmail.com" />
             <FooterItems icon={faPhoneAlt} content="03-4775868" />
             <h1 className="text-center">Copyright © Your Website 2025</h1>

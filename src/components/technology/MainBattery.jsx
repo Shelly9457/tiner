@@ -12,16 +12,6 @@ const MainBattery = () => {
             img: "/images/technology2.png",
             content: "用於固定式發電與高效能能源系統",
         },
-        {
-            name: "DMFC｜直接甲醇燃料電池",
-            img: "/images/technology3.png",
-            content: "適用於小型電子設備與攜帶式裝置",
-        },
-        {
-            name: "MCFC｜熔融碳酸鹽燃料電池",
-            img: "/images/technology4.png",
-            content: "用於大型工業發電與能源供應",
-        },
     ]
     return (
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6 flex-1 lg:w-[80%] w-full mx-auto">

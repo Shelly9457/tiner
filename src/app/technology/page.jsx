@@ -18,7 +18,7 @@ const technology = () => {
         <>
             <HeaderSlider slides={homeSlides} title={"以創新技術，實現零碳能源新紀元"} desc={"Tiner技術 -"} />
 
-            <section className="container py-16 w-full lg:w-[80%] mx-auto center gap-5 min-h-screen flex-col">
+            <section className="container py-16 w-full lg:w-[80%] mx-auto center gap-5 flex-col">
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl">主要燃料電池</h1>
                 <MainBattery></MainBattery>
             </section>
@@ -48,7 +48,7 @@ const technology = () => {
                 </div>
             </section>
             <section className="py-16 w-full gap-5 center gap-5 min-h-screen flex-col">
-                <h1 className="text-(--one) font-bold text-3xl xl:text-4xl text-center my-5">電池燃料技術優勢在哪裡？</h1>
+                <h1 className="text-(--one) font-bold text-3xl xl:text-4xl text-center my-5">燃料電池技術優勢在哪裡？</h1>
                 <Good></Good>
                 <GoodItems></GoodItems>
             </section>
@@ -63,11 +63,6 @@ const technology = () => {
                         <div className="text-(--one) lg:w-[40%] w-[80%] mx-auto font-bold">
                             <h1 className="text-4xl mb-2">30%<FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon></h1>
                             <h1 className="text-3xl">製造成本降低</h1>
-                        </div>
-                        <div className="text-(--one) lg:w-[40%] w-[80%] mx-auto font-bold">
-                            <h1 className="text-4xl">3 – 5 元/kWh</h1>
-                            <h1 className="text-3xl my-2">使用成本</h1>
-                            <p className="text-(--two) text-lg">比鋰電池更具競爭力</p>
                         </div>
                     </article>
                 </div>

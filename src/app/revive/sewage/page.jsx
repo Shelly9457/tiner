@@ -54,14 +54,14 @@ const sewage = () => {
                     </div>
                     <div className="center flex-col">
                         <h1 className="text-(--dark) sm:text-2xl text-xl">每年處理</h1>
-                        <h1 className="text-(--one) font-bold sm:text-4xl text-2xl">182.5 噸污泥 </h1>
+                        <h1 className="text-(--one) font-bold sm:text-4xl text-2xl">1,460 噸污泥 </h1>
                     </div>
                     <div className="relative h-50">
                         <Image src="/images/sewage4.png" fill alt="sewage" className="object-cover rounded-lg"></Image>
                     </div>
                     <div className="center flex-col">
                         <h1 className="text-(--dark) sm:text-2xl text-xl">產出</h1>
-                        <h1 className="text-(--one) font-bold sm:text-4xl text-2xl">30 kW 綠色電力 </h1>
+                        <h1 className="text-(--one) font-bold sm:text-4xl text-2xl">650kW - 1 MW 綠色電力 </h1>
                     </div>
                     <div className="relative h-50">
                         <Image src="/images/sewage5.png" fill alt="sewage" className="object-cover rounded-lg"></Image>

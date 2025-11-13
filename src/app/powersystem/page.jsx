@@ -10,20 +10,20 @@ import HeaderSlider from "@/components/HeaderSlider";
 const powersystem = () => {
     const PowerData = [
         {
-            name: "無人機",
-            desc: "結合高能燃料電池與固態儲氫技術，打造長續航氫能無人機",
+            name: "無人機動力系統",
+            desc: "結合高能燃料電池與固態儲氫技術，打造長續航氫能無人機動力系統",
             img: "/images/power2.png",
             link: "/powersystem/drones",
         },
         {
             name: "氫能載具",
-            desc: "簡單介紹簡單介紹簡單介紹簡單介紹簡單介紹",
+            desc: "推動氫能在交通運輸的應用，開發高效、安全、可持續的氫燃料電池車載系統",
             img: "/images/power3.png",
             link: "/powersystem/bus",
         },
         {
             name: "氫能船舶",
-            desc: "簡單介紹簡單介紹簡單介紹簡單介紹簡單介紹",
+            desc: "以燃料電池與電池組混合驅動技術，開創海運脫碳新時代",
             img: "/images/power4.png",
             link: "/powersystem/boat",
         },
