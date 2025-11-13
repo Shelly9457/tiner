@@ -26,7 +26,7 @@ const waste = () => {
         },
         {
             name: "脫硫裝置",
-            desc: `利用微生物分解有機物產生氫氣`,
+            desc: `物理吸附去除硫化氫`,
             img: "/images/waste4.png",
         },
     ]
