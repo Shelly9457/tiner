@@ -3,7 +3,7 @@ export default function ProductCard({ name, desc, img }) {
     return (
         <div className="rounded-lg lg:min-w-[calc(33.333%-7px)] sm:min-w-[calc(50%-7px)] me-[15px] min-w-full bg-[#FEFEFE] h-150 flex flex-col">
             <div className="relative h-80 w-full">
-                <Image src={img} fill alt={name} className="object-cover rounded-t-lg"></Image>
+                <Image src={img} fill alt={name} className=" rounded-t-lg top-0"></Image>
             </div>
             <div className="center flex-col gap-4 px-3 py-5 text-(--one) flex-1">
                 <h1 className="md:text-2xl text-xl font-bold">{name}</h1>

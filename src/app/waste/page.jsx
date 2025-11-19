@@ -87,10 +87,10 @@ const waste = () => {
                             元件類
                         </h1>
                     </div>
-                    <div className="flex">
+                    <div className="flex mx-auto">
                         <div className={`min-w-full transtion-all duration-500 center sm:gap-5  sm:flex-row flex-col
                                         ${ActiveTab == "make" ? 'translate-x-0' : '-translate-x-[100%]'}`}>
-                            <div className="grid md:grid-cols-2 grid-col-1 gap-5">
+                            <div className="grid md:grid-cols-2 grid-col-1 gap-5 w-[80%]">
                                 {MakeData.map((item, index) => {
                                     return (
                                         <Card name={item.name} desc={item.desc} img={item.img} key={index}></Card>
@@ -100,7 +100,7 @@ const waste = () => {
                         </div>
                         <div className={`min-w-full transtion-all duration-500 center gap-5 
                                         ${ActiveTab == "component" ? '-translate-x-[100%]' : ''}`}>
-                            <div className="grid md:grid-cols-2 grid-col-1 gap-5">
+                            <div className="grid md:grid-cols-2 grid-col-1 gap-5 w-[80%]">
                                 {ComponentData.map((item, index) => {
                                     return (
                                         <Card name={item.name} desc={item.desc} img={item.img} key={index}></Card>

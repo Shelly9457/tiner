@@ -50,15 +50,13 @@ const cooperate = () => {
         },
     ]
     const CooperateIcons1 = [
-        "/images/cooperate_icon1.png",
-        "/images/cooperate_icon2.png",
         "/images/cooperate_icon3.png",
-        "/images/cooperate_icon4.png",
-        "/images/cooperate_icon5.png"
-    ]
-    const CooperateIcon2 = [
+        "/images/cooperate_icon5.png",
         "/images/cooperate_icon6.png",
         "/images/cooperate_icon7.png",
+    ]
+    const CooperateIcon2 = [
+     
         "/images/cooperate_icon8.png",
         "/images/cooperate_icon9.png",
         "/images/cooperate_icon10.png",
@@ -90,14 +88,14 @@ const cooperate = () => {
                     <div className="flex w-full cooperate_icon_container1">
                         {CooperateIcons1.map((item, index) => {
                             return (
-                                <div className="relative h-30 md:min-w-1/4 min-w-1/2" key={index}>
+                                <div className="relative center h-30 md:min-w-1/4 min-w-1/2" key={index}>
                                     <Image src={item} alt="icon" fill className="object-contain" ></Image>
                                 </div>
                             )
                         })}
                         {CooperateIcons1.map((item, index) => {
                             return (
-                                <div className="relative h-30 md:min-w-1/4 min-w-1/2" key={index}>
+                                <div className="relative center h-30 md:min-w-1/4 min-w-1/2" key={index}>
                                     <Image src={item} alt="icon" fill className="object-contain" ></Image>
                                 </div>
                             )
@@ -107,14 +105,14 @@ const cooperate = () => {
                     <div className="flex justify-end w-full cooperate_icon_container2">
                         {CooperateIcon2.map((item, index) => {
                             return (
-                                <div className="relative h-30 md:min-w-1/4 min-w-1/2" key={index}>
+                                <div className="relative center h-30 md:min-w-1/4 min-w-1/2" key={index}>
                                     <Image src={item} alt="icon" fill className="object-contain" ></Image>
                                 </div>
                             )
                         })}
                         {CooperateIcon2.map((item, index) => {
                             return (
-                                <div className="relative h-30 md:min-w-1/4 min-w-1/2" key={index}>
+                                <div className="relative center h-30 md:min-w-1/4 min-w-1/2" key={index}>
                                     <Image src={item} alt="icon" fill className="object-contain" ></Image>
                                 </div>
                             )
