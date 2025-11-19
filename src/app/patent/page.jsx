@@ -32,7 +32,9 @@ const patent = () => {
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl">核心專利</h1>
                 <p className="text-(--two) text-lg text-center font-bold mb-5">地諾科技持有多項專利，涵蓋燃料電池、催化劑技術、儲氫材料等領域</p>
                 <CardItems></CardItems>
-                <Btn text={"相關產品"}></Btn>
+                <Link href="/generation">
+                    <Btn text={"相關產品"}></Btn>
+                </Link>
             </section>
             <section className="py-16 w-full ms-auto gap-5 min-h-screen">
                 <div className="flex w-full lg:flex-row flex-col gap-5">

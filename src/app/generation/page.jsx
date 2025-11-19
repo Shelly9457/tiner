@@ -53,7 +53,7 @@ const generation = () => {
                 <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center">
                     地諾科技致力於推動燃料電池發電系統的革新，<br />
                     以氫能為核心能源，結合高效率電化學轉換技術，<br />
-                    打造高效能、低排放、模組化、可擴展 的發電解決方案
+                    打造高效能、低排放、模組化、可擴展的發電解決方案
                 </h1>
             </section>
             <section className="py-16 bg-(--three)">

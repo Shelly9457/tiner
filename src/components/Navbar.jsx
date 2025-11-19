@@ -69,7 +69,7 @@ const Navbar = () => {
                             name: "智慧城市與再生能源",
                             href: "/revive",
                             subsubsubmenu: [
-                                { name: "楊梅汙水處理廠", href: "/revive/sewage" },
+                                { name: "楊梅污水處理廠", href: "/revive/sewage" },
                                 { name: "畜牧場污泥轉氫能發電", href: "/revive/fram" },
                             ]
                         },

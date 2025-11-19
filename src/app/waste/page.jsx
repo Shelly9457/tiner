@@ -61,15 +61,15 @@ const waste = () => {
 
     return (
         <>
-            <HeaderSlider slides={homeSlides} title={"讓廢棄再生，讓能源循環"} desc={"生物質轉化與沼渣消化"} />
+            <HeaderSlider slides={homeSlides} title={"讓廢棄再生，讓能源循環"} desc={"生質能轉化系統與沼渣消化"} />
             <section className="py-16 container center mx-auto flex-col lg:w-[80%] w-full">
                 <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center mb-10">
                     從生物質到氫能，地諾科技以創新轉化技術<br />
                     實現廢棄物能源化、淨零排放的永續藍圖
                 </h1>
-                <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5">生物質轉化系統</h1>
+                <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5">生質能轉化系統系統</h1>
                 <h1 className="text-(--one) font-bold xl:text-lg text-md text-center">
-                    地諾科技的生物質轉化系統結合<br />
+                    地諾科技的生質能轉化系統系統結合<br />
                     微生物製氫技術與厭氧發酵工程，<br />
                     將農業廢棄物、污泥與有機物轉化為氫氣與甲烷，<br />
                     實現資源再利用與綠色能源循環

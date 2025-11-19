@@ -10,17 +10,17 @@ const components = () => {
     const Products = [
         {
             name: "微型電池堆",
-            desc: `將原料燃料轉化為氫氣\n供電池使用`,
+            desc: `地諾獨家專利產品，\n管型設計大幅提升電池堆體積能量密度`,
             img: "/images/component7.png",
         },
         {
-            name: "SOFC電池堆",
-            desc: `提供燃料及系統\n運作所需的熱能`,
+            name: "PEMFC空冷堆",
+            desc: `使用高純氫氣作為燃料，\n以空氣冷卻降溫，\n常用於輕型載具、便攜式電源供應，\n以及無人機等應用產品`,
             img: "/images/component8.png",
         },
         {
             name: "PEMFC電池堆",
-            desc: `燃燒未完全反應的燃料\n確保環保排放`,
+            desc: `便攜式電解製氫裝置，\n應用地諾獨家專利管型電池單元設計，\n大幅提升電池堆體積能量密度，\n可實現輕型載具(氫能腳踏車/摩托車)搭載整合製氫加氫功能`,
             img: "/images/component9.png",
         },
     ]
@@ -165,7 +165,7 @@ const components = () => {
                                 </div>
                                 <div className="center flex-col gap-4 px-3 py-5 text-(--one) flex-1">
                                     <h1 className="md:text-2xl text-xl font-bold">{item.name}</h1>
-                                    <h1 className="md:text-xl text-md whitespace-pre-line leading-none text-center">{item.desc}</h1>
+                                    <h1 className="md:text-xl text-md whitespace-pre-line leading-7 text-center">{item.desc}</h1>
                                 </div>
                             </div>
                         )

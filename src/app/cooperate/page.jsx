@@ -32,7 +32,7 @@ const cooperate = () => {
     ]
     const CardData = [
         {
-            name: "楊梅汙水處理廠",
+            name: "楊梅污水處理廠",
             desc: `透過厭氧發酵與甲烷重整技術，\n
                     將污泥轉化為氫氣與電能，達成「廢棄物零輸出」\n
                     與「永續淨零」的雙重目標`,
@@ -41,8 +41,8 @@ const cooperate = () => {
         },
         {
             name: "民營畜牧場",
-            desc: `結合沼氣回收與燃料\n
-                    電池發電技術，不僅減少環境污染，\n
+            desc: `結合沼氣回收與燃料電池發電技術，\n
+                    不僅減少環境污染，\n
                     更為農村能源轉型開創新模式。`,
             img: "/images/cooperate_project2.png",
             href: "/revive/fram",
@@ -84,7 +84,8 @@ const cooperate = () => {
                 </article>
             </section>
             <section className="py-16 w-full">
-                <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5"> 政府、產業、學術攜手合作，推動氫能技術落地應用</h1>
+                <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5">政府、產業、學術攜手合作，
+                    推動氫能技術導入實際應用</h1>
                 <article className="overflow-hidden">
                     <div className="flex w-full cooperate_icon_container1">
                         {CooperateIcons1.map((item, index) => {
@@ -145,7 +146,9 @@ const cooperate = () => {
                         地諾科技透過多元的合作模式<br />
                         推動氫能產業發展
                     </h1>
-                    <p className="text-(--dark) lg:text-lg text-md">我們不僅提供技術授權，共享燃料電池與氫能儲存技術，更積極與合作夥伴進行聯合研發，開發新一代氫能應用。同時，我們推動產業聯盟，串聯上下游資源，建立完整的氫能供應鏈，並透過商業夥伴關係，共同打造加氫站與智慧能源解決方案，加速氫能技術的市場落地與普及</p>
+                    <p className="text-(--dark) lg:text-lg text-md">我們不僅提供技術授權，共享燃料電池與氫能儲存技術，
+                        更積極與合作夥伴進行聯合研發，開發新一代氫能應用。同時，我們推動產業聯盟，串聯上下游資源，共同打造加氫站與智慧能源解決方案，加速氫能技術的實際應用與產業化
+                        建立完整的氫能供應鏈，並透過商業夥伴關係，共同打造加氫站與智慧能源解決方案，加速氫能技術的實際應用與產業化。</p>
                 </article>
             </section>
             <section className="pt-16 w-full relative h-100 overflow-hidden center flex-col">

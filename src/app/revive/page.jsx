@@ -8,7 +8,7 @@ import HeaderVideo from "@/components/HeaderVideo";
 const revive = () => {
     const CardData = [
         {
-            name: "城市汙水",
+            name: "城市污水",
             img: "/images/revive2.png"
         },
         {
@@ -54,7 +54,7 @@ const revive = () => {
             desc: "從農業廢棄物到清潔電能，實現能源自給自足",
         },
         {
-            name: "桃園汙水處理廠",
+            name: "桃園污水處理廠",
             href: "/revive/sewage",
             img: "/images/revive9.png",
             desc: "從廢污到綠氫，打造台灣首座「廢污資源化」示範廠",
