@@ -7,7 +7,7 @@ export default function IndexIconCard() {
         { name: "氫能客運與車輛", icon: faIdCardAlt },
         { name: "無人機動力系統", icon: faPlane },
         { name: "智慧城市能源系統", icon: faCity },
-        { name: "生物質轉化與\n再生能源", icon: faRecycle },
+        { name: "生物質轉化與再生能源", icon: faRecycle },
     ]
     return (
         Data.map((item, index) => {
