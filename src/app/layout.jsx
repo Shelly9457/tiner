@@ -19,12 +19,18 @@ const geistMono = Geist_Mono({
 
 // SEO 設定區
 export const metadata = {
-  title: "TINER 氫能科技 | 創新能源未來",
-  description: "Tiner 專注於燃料電池、氫能應用與再生能源解決方案，推動綠色永續未來。",
-  keywords: ["氫能", "燃料電池", "再生能源", "Tiner", "綠色科技", "地諾"],
+  title: "TINER | 地諾科技 | 氫能科技與創新能源未來",
+  description: "Tiner（地諾科技） 專注於燃料電池、氫能應用與再生能源解決方案，推動綠色永續未來。",
+  keywords: [
+    "Tiner",
+    "地諾科技",
+    "氫能科技",
+    "氫能動力",
+    "固態儲氫",,
+  ],
   openGraph: {
-    title: "Tiner 氫能科技 | 創新能源未來",
-    description: "Tiner 專注於燃料電池、氫能應用與再生能源解決方案。",
+    title: "Tiner | 地諾科技 | 氫能科技與創新能源未來",
+    description: "Tiner（地諾科技） 專注於燃料電池、氫能應用與再生能源解決方案，推動綠色永續未來。",
     url: "tiner-self.vercel.app",
     siteName: "Tiner",
     locale: "zh_TW",

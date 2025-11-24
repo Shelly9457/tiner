@@ -48,7 +48,7 @@ const generation = () => {
     ]
     return (
         <>
-            <HeaderVideo title={"智慧能源的核心，來自燃料電池的創新力量"} desc={"燃料電池發電系統"} video={"https://dl.dropboxusercontent.com/scl/fi/3f3yjkq1gtcu5t82ybwvh/product_chinese.mp4?rlkey=8bjouvqs08j9plcvvuju5o6md&st=5vu4a0ri&raw=1"}></HeaderVideo>
+            <HeaderVideo title={"智慧能源的核心，來自燃料電池的創新力量"} desc={"燃料電池發電系統"} video={"https://dl.dropboxusercontent.com/scl/fi/schd9ge9p8gl9ib0cdmsj/product_chinese.mp4?rlkey=1e3z5zkkk8b6d7to0b21wthxw&st=ybgbxv6q&raw=1"}></HeaderVideo>
             <section className="py-16 container center mx-auto flex-col ">
                 <h1 className="text-(--one) font-bold xl:text-2xl text-xl text-center">
                     地諾科技致力於推動燃料電池發電系統的革新，<br />
