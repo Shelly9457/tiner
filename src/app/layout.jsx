@@ -26,16 +26,30 @@ export const metadata = {
     "地諾科技",
     "氫能科技",
     "氫能動力",
-    "固態儲氫",,
+    "固態儲氫", ,
   ],
   openGraph: {
     title: "Tiner | 地諾科技 | 氫能科技與創新能源未來",
     description: "Tiner（地諾科技） 專注於燃料電池、氫能應用與再生能源解決方案，推動綠色永續未來。",
     url: "tiner-self.vercel.app",
-    siteName: "Tiner",
+    siteName: "Tiner地諾科技",
     locale: "zh_TW",
     type: "website",
   },
+  alternates: {
+    canonical: "https://tiner-self.vercel.app",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  }
 };
 
 export default function RootLayout({ children }) {
