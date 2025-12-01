@@ -59,11 +59,24 @@ const about = () => {
             <section className="py-16 w-full min-h-screen flex justify-evenly items-center flex-col bg-no-repeat bg-cover bg-[length:100%_100%]" style={{ backgroundImage: "url('/images/about_bg1.png')" }}>
                 <h1 className="text-(--one) font-bold text-3xl xl:text-4xl w-3/4 ms-auto">Tiner創始人</h1>
                 <div className="container center w-full mx-auto sm:w-[80%] gap-5 md:flex-row flex-col">
-                    <article className="w-full md:w-1/2 center flex-col md:gap-8 gap-2 ">
-                        <Image src="/images/doctor.png" width={300} height={300} alt="doctor" className="object-cover"></Image>
+                    <article className="w-full md:w-1/2 center flex-col md:gap-8 gap-2 md:h-150">
+                        <video
+                            className="md:w-[60%] w-full h-full object-contain my-2"
+                            preload="auto"
+                            playsInline
+                            autoPlay
+                            loop
+                            muted
+                            controls
+                        >
+                            <source src="https:/dl.dropboxusercontent.com/scl/fi/qkow68icuuzpmalft3v1e/HBD.mp4?rlkey=cgz779iebfs0til07pfhcosfq&st=f399ahe5&raw=1" type="video/mp4" />
+                        </video>
+                        <h1 className="text-(--one)">在博士生日這天，氫能示範場首次發電!!</h1>
                     </article>
                     <article className="w-full md:w-1/2 flex flex-col md:gap-8 gap-2 text-(--dark)">
+                        <Image src="/images/doctor.png" width={300} height={300} alt="doctor" className="object-cover"></Image>
                         <h1 className="xl:text-4xl text-3xl">温良成 博士</h1>
+
                         <p className="md:text-(--three) text-(--one)">地諾科技創辦人兼董事長</p>
                         <h1 className="xl:text-xl lg:text-lg">
                             主要應用領域為SOFC(固態氧化物燃料電池) 電池單元<br />
