@@ -39,17 +39,17 @@ const waste = () => {
         {
             name: "造粒機",
             desc: `將污泥加工成可控粒徑，\n提高燃料或資源化利用效率`,
-            img: "/images/waste5.png",
+            img: "/images/waste6.png",
         },
         {
             name: "尾熱脫水裝置",
             desc: `利用廢熱進一步脫水，\n提高能源回收效率`,
-            img: "/images/waste6.png",
+            img: "/images/waste7.png",
         },
         {
             name: "合成氣反應裝置",
             desc: `將有機殘渣轉化為合成氣，\n供燃料電池或其他能源系統使用`,
-            img: "/images/waste6.png",
+            img: "/images/waste8.png",
         },
     ]
     const [ActiveTab, setActiveTab] = useState("make")
