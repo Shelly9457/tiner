@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 // SEO 設定區
 export const metadata = {
   title: "TINER | 地諾科技 | 氫能科技與創新能源未來",
-  description: "Tiner（地諾科技） 專注於燃料電池、氫能應用與再生能源解決方案，推動綠色永續未來。",
+  description: "地諾科技 | 專注於燃料電池、氫能應用與再生能源解決方案，推動綠色永續未來。",
   keywords: [
     "Tiner",
     "地諾科技",
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
               <div className="bg-(--light) p-1 me-2 rounded-full w-[50px] h-[50px] center">
                 <Image src="/images/logo.png" width={50} height={50} alt="logo"></Image>
               </div>
-              <h1 className="tracking-widest">TINER</h1>
+              <h1 className="tracking-widest">TINER地諾科技</h1>
             </div>
             <FooterItems icon={faLocationDot} content="27007桃園市新屋區華興路690巷199弄85號" />
             <FooterItems icon={faEnvelope} content="tiner20231020@gmail.com" />

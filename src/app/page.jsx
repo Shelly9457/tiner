@@ -49,7 +49,7 @@ export default function Home() {
 				</article>
 				<article className="text-(--dark) font-bold bg-(--light)/80 text-center py-10 md:px-15 px-5 rounded-t-xl absolute lg:inset-x-50 inset-x-0 bottom-0 z-1">
 					<h1 className="md:text-3xl text-xl md:mb-8 mb-3">創新研發，務實驗證 ，成就淨零未來</h1>
-					<h1 className="md:text-lg text-sm">TINER致力於推動綠色能源技術，打造高效燃料電池系統，為環保永續貢獻力量</h1>
+					<h1 className="md:text-lg text-sm">Tiner地諾科技致力於推動綠色能源技術，打造高效燃料電池系統，為環保永續貢獻力量</h1>
 				</article>
 			</section>
 			<section className="py-16 lg:w-[80%] w-full mx-auto ">
@@ -84,7 +84,7 @@ export default function Home() {
 			<section className="py-16 lg:w-[80%] w-full mx-auto ">
 				<article className="center flex-col gap-8">
 					<h1 className="text-center text-(--one) font-bold md:text-2xl text-lg">
-						從陸地到天空，從城市到農場，我們的氫能技術正驅動下一代綠色能源革命
+						從陸地到天空，從城市到農場，地諾科技的氫能技術正驅動下一代綠色能源革命
 					</h1>
 					<div className="flex gap-8 xl:flex-row flex-col">
 						<div className="xl:w-1/2 w-full center">
