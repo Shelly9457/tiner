@@ -7,7 +7,7 @@ export default function AppVideo() {
 
     // 🔹 三個語言的影片檔案
     const videos = {
-        zh: "https://dl.dropboxusercontent.com/scl/fi/36gn5cys401drnjb9xfwc/app_chinese.mp4?rlkey=62sv345ffjzhjts48xklte56c&raw=1",
+        zh: "https://dl.dropboxusercontent.com/scl/fi/l4vro6qjrllj22c1qn6hl/app_chinese.m4v?rlkey=w21yxf8wh8pivo8bobfd8igzd&st=1krz753o&raw=1",
         en: "https://dl.dropboxusercontent.com/scl/fi/jgq9oulou4f8d7vrzfw8w/app_english.mp4?rlkey=4cz04tjmtl22f6c147kpda8r5&st=x65v4g2s&raw=1",
         jp: "https:///dl.dropboxusercontent.com/scl/fi/u44h109xgrbb1c8ippy7a/app_japan.mp4?rlkey=eqfeuvdcrpmqq9fuaj8e9q3su&st=hkydgd01&raw=1",
     };
