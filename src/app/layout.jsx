@@ -26,7 +26,7 @@ export const metadata = {
     "地諾科技",
     "氫能科技",
     "氫能動力",
-    "固態儲氫", ,
+    "固態儲氫",
   ],
   openGraph: {
     title: "Tiner | 地諾科技 | 氫能科技與創新能源未來",
