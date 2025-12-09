@@ -37,8 +37,8 @@ const bus = () => {
                         <Image src="/images/bus1.png" fill alt="bus1" className="object-cover"></Image>
                     </div>
                     <div className=" lg:w-1/3 w-full text-(--dark) text-xl font-bold">
-                        <h1>氫能客運系統以燃料電池<br />
-                            為核心動力來源，<br />
+                        <h1>地諾科技的氫能客運系統以<br />
+                            燃料電池為核心動力來源，<br />
                             透過高壓氫氣轉換為電能，<br />
                             驅動大型客運車輛，<br />
                             實現長續航、低噪音、零排放
