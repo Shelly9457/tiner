@@ -14,7 +14,7 @@ const fram = () => {
     ];
     return (
         <>
-            <HeaderSlider slides={homeSlides} title={"民營氫能畜牧場"} desc={"利用生質能技術，將污水處理廠污泥轉化為氫能發電"} />
+            <HeaderSlider slides={homeSlides} title={"民營氫能畜牧場"} desc={"地諾科技利用生質能技術，將污水處理廠污泥轉化為氫能發電"} />
             <section className="md:py-16 pb-16 container min-h-screen lg:w-[80%] w-full mx-auto">
                 <div className="flex gap-8 md:flex-row flex-col">
                     <article className="md:w-1/2 w-full">

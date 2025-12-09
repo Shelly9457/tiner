@@ -32,17 +32,17 @@ const revive = () => {
         },
         {
             name: "造粒機",
-            img: "/images/revive6.png",
+            img: "/images/revive7.png",
             desc: "將污泥加工成可控粒徑，提高燃料或資源化利用效率"
         },
         {
             name: "尾熱脫水裝置",
-            img: "/images/revive7.png",
+            img: "/images/revive8 (2).png",
             desc: "利用廢熱進一步脫水，提高能源回收效率"
         },
         {
             name: "合成氣反應裝置",
-            img: "/images/revive7.png",
+            img: "/images/revive9 (2).png",
             desc: "將有機殘渣轉化為合成氣，供燃料電池或其他能源系統使用"
         },
     ]
