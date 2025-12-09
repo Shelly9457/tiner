@@ -6,7 +6,7 @@ import { faBolt, faShieldAlt, faMoneyBillAlt } from "@fortawesome/free-solid-svg
 import Btn from "@/components/Btn";
 import IconBox from "@/components/IconBox";
 import HeaderVideo from "@/components/HeaderVideo";
-const components = () => {
+const component = () => {
     const Products = [
         {
             name: "微型電池堆",
@@ -181,4 +181,4 @@ const components = () => {
 }
 
 
-export default components;
+export default component;
