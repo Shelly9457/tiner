@@ -70,7 +70,7 @@ const cooperate = () => {
 
     return (
         <>
-            <HeaderSlider slides={homeSlides} title={"鏈結學術 × 產業 × 政策"} desc={"Tiner產學 -"} />
+            <HeaderSlider slides={homeSlides} title={"鏈結學術 × 產業 × 政策"} desc={"Tiner地諾科技產學 -"} />
             <section className="py-16 bg-[url('/images/cooperate_bg1.png')] bg-cover bg-center bg-no-repeat">
                 <h1 className="text-(--one) font-bold xl:text-4xl text-3xl text-center mb-5">攜手案例</h1>
                 <article className="grid md:grid-cols-2 grid-cols-1 mx-auto gap-8 sm:w-[80%] w-full">
