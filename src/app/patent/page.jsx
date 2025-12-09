@@ -10,8 +10,8 @@ import HeaderSlider from "@/components/HeaderSlider";
 const patent = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const patentImages = [
-        "/images/patentbook1.png",
-        "/images/patentbook2.png",
+        "/images/patentBook1.png",
+        "/images/patentBook2.png",
     ];
     const total = patentImages.length;
     const nextSlide = () => {
@@ -82,10 +82,10 @@ const patent = () => {
                                     </div>
                                 ))}
                                 <div className="relative lg:h-150 h-80 min-w-[80%]">
-                                    <Image src="/images/patentbook1.png" fill alt="patebook" className="object-contain"></Image>
+                                    <Image src="/images/patentBook1.png" fill alt="patebook" className="object-contain"></Image>
                                 </div>
                                 <div className="relative lg:h-150 h-80 min-w-[80%]">
-                                    <Image src="/images/patentbook2.png" fill alt="patebook" className="object-contain"></Image>
+                                    <Image src="/images/patentBook2.png" fill alt="patebook" className="object-contain"></Image>
                                 </div>
                             </div>
                         </div>
