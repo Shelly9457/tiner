@@ -36,9 +36,9 @@ const revive = () => {
             desc: "將污泥加工成可控粒徑，提高燃料或資源化利用效率"
         },
         {
-            name: "尾熱脫水裝置",
-            img: "/images/revive8 (2).png",
-            desc: "利用廢熱進一步脫水，提高能源回收效率"
+            name: "尾熱回收烘乾裝置",
+            desc: `利用廢熱進一步降低污尼含水量，\n提高能源利用率`,
+            img: "/images/waste7.png",
         },
         {
             name: "合成氣反應裝置",

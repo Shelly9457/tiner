@@ -20,7 +20,7 @@ export default function IndexProducts() {
         },
         {
             name: "電池堆",
-            href: "/generation/components",
+            href: "/generation/component",
             img: "/images/index4.png"
         },
     ]

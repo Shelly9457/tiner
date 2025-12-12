@@ -72,7 +72,7 @@ export default function good() {
                         </div>
                     </div>
                     <div className="flex flex-col gap-5 justify-center items-end text-(--light) w-[45%] mx-auto">
-                        <h1 className="text-2xl">10,000hr &lt; 1%</h1>
+                        <h1 className="text-2xl">1,000hr &lt; 1%</h1>
                         <div className="w-full h-[2px] bg-(--light)"></div>
                         <p className="text-2xl">低能量衰減</p>
                     </div>

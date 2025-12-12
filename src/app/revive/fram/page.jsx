@@ -24,7 +24,7 @@ const fram = () => {
                     </article >
                     <article className="md:w-1/2 w-full flex justify-center md:pt-10">
                         <h1 className="text-(--dark) font-bold text-xl text-center">
-                            地諾科技與萌侑科技合作，負責再生燃氣重整、<br />
+                            地諾科技負責再生燃氣重整、<br />
                             氫氣純化與燃料電池系統的整合應用
                         </h1>
                     </article >
@@ -56,7 +56,7 @@ const fram = () => {
                     </div>
                     <div className="center flex-col">
                         <h1 className="text-(--dark) sm:text-2xl text-xl">每年處理</h1>
-                        <h1 className="text-(--one) font-bold sm:text-4xl text-2xl"> 182.5噸污泥 </h1>
+                        <h1 className="text-(--one) font-bold sm:text-4xl text-2xl"> 1460噸污泥 </h1>
                     </div>
                     <div className="relative h-50">
                         <Image src="/images/fram4.png" fill alt="fram" className="object-cover rounded-lg"></Image>

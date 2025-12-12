@@ -55,7 +55,7 @@ const drones = () => {
     ];
     return (
         <>
-            <HeaderSlider slides={homeSlides} title={"以氫為翼，啟航未來天空"} desc={"高效能、長續航、低碳排的無人機動力解決方案"} />
+            <HeaderSlider slides={homeSlides} title={"以氫為翼，啟航未來天空"} desc={"高效能、長續航、零碳排的無人機動力解決方案"} />
 
             <SectionOne text={` 
                 地諾科技的氫能無人機動力系統，\n
@@ -80,7 +80,7 @@ const drones = () => {
                         <div className="flex md:justify-start justify-between gap-7 mt-5">
                             <div>
                                 <h1 className="text-(--dark) text-md">飛行時間</h1>
-                                <h1 className="md:text-3xl mt-3 text-2xl text-(--one) font-bold">60–120 分鐘 </h1>
+                                <h1 className="md:text-3xl mt-3 text-2xl text-(--one) font-bold">60–1200 分鐘 </h1>
                             </div>
                             <div>
                                 <h1 className="text-(--dark) text-md">最大起飛重量</h1>

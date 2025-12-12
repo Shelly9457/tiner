@@ -43,7 +43,7 @@ const generation = () => {
             name: "電池元件",
             desc: "膜電極、電池單元、整體電池堆",
             img: "/images/generation4.png",
-            link: "/generation/components",
+            link: "/generation/component",
         },
     ]
     return (

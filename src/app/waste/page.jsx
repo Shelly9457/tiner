@@ -42,8 +42,8 @@ const waste = () => {
             img: "/images/waste6.png",
         },
         {
-            name: "尾熱脫水裝置",
-            desc: `利用廢熱進一步脫水，\n提高能源回收效率`,
+            name: "尾熱回收烘乾裝置",
+            desc: `利用廢熱進一步降低污尼含水量，\n提高能源利用率`,
             img: "/images/waste7.png",
         },
         {
