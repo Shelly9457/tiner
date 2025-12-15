@@ -9,15 +9,15 @@ export default function AppVideo() {
     const videos = {
         
         zh: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/app_chinese.m4v",
-        en: "https://dl.dropboxusercontent.com/scl/fi/jgq9oulou4f8d7vrzfw8w/app_english.mp4?rlkey=4cz04tjmtl22f6c147kpda8r5&st=x65v4g2s&raw=1",
-        jp: "https:///dl.dropboxusercontent.com/scl/fi/u44h109xgrbb1c8ippy7a/app_japan.mp4?rlkey=eqfeuvdcrpmqq9fuaj8e9q3su&st=hkydgd01&raw=1",
+        en: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/app_english.mp4",
+        jp: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/app_japan.mp4",
     };
     useEffect(() => {
         const video = videoRef.current;
         if (video) {
             video.load();
             video.play().catch(() => {
-                console.warn("自動播放被阻止，等待使用者互動");
+                console.warn("自動播放被阻止，等待使用者互動"); 
             });
         }
     }, [language]);

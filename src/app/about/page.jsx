@@ -69,7 +69,7 @@ const about = () => {
                             muted
                             controls
                         >
-                            <source src="https://dl.dropboxusercontent.com/scl/fi/qkow68icuuzpmalft3v1e/HBD.mp4?rlkey=cgz779iebfs0til07pfhcosfq&st=dku7d7e7&raw=1" type="video/mp4" />
+                            <source src="https://cmqy32keaml8j4go.public.blob.vercel-storage.com/HBD.mp4" type="video/mp4" />
                         </video>
                         <h1 className="text-(--one)">在博士生日這天，氫能示範場首次發電!!</h1>
                     </article>

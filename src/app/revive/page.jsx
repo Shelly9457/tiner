@@ -62,7 +62,7 @@ const revive = () => {
     ]
     return (
         <>
-            <HeaderVideo title={"從廢棄到發電 打造永續城市新動能"} desc={"智慧城市 × 再生能源"} video={"https://dl.dropboxusercontent.com/scl/fi/l4vro6qjrllj22c1qn6hl/app_chinese.m4v?rlkey=w21yxf8wh8pivo8bobfd8igzd&st=1krz753o&raw=1"}></HeaderVideo>
+            <HeaderVideo title={"從廢棄到發電 打造永續城市新動能"} desc={"智慧城市 × 再生能源"} video={"https://cmqy32keaml8j4go.public.blob.vercel-storage.com/app_chinese.m4v"}></HeaderVideo>
             <section className="flex py-16 min-h-screen">
                 <div className="container bg-(--three) sm:w-3/4 w-full me-auto flex relative">
                     <article className="md:w-[90%] w-full ms-auto py-16 flex flex-col justify-around sm:items-start items-center">
