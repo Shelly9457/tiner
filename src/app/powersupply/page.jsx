@@ -85,7 +85,7 @@ const pwoersupply = () => {
     ]
     return (
         <>
-            <HeaderSection img={"/images/supply1.png"} title={"隨行綠能，隨時啟動未來力量"} desc={"隨身攜帶的應急電備用電源"}></HeaderSection >
+            <HeaderSection img={"/images/supply1.png"} title={"隨行綠能，隨時啟動未來力量"} desc={"隨身攜帶的應急備用電源"}></HeaderSection >
             <div id="look"></div>
             <SectionOne text={` 
                 地諾科技氫能便攜式電源，\n
