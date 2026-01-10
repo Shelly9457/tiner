@@ -7,33 +7,20 @@ export default function AppVideo() {
 
     // 🔹 三個語言的影片檔案
     const videos = {
-        zh: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/product_chinese.mp4",
-        en: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/prduct_english.mp4",
-        jp: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/product_japan.mp4",
+        zh: "https://www.youtube.com/embed/gZ6ez3Lyxp0?si=qyO2YZq4LuiFgXEF",
+        en: "https://www.youtube.com/embed/mVGELDD-Qoo?si=_YB_gfsLdZa2OPU_",
+        jp: "https://www.youtube.com/embed/QWaYwlLth8E?si=y7jMSTWkodJsHlKO",
     };
-    useEffect(() => {
-        const video = videoRef.current;
-        if (video) {
-            video.load();
-            video.play().catch(() => {
-                console.warn("自動播放被阻止，等待使用者互動");
-            });
-        }
-    }, [language]);
+
     return (
         <div className="relative w-full overflow-hidden">
-            <video
-                ref={videoRef}
-                className="w-full h-full object-cover"
-                preload="auto"
-                playsInline
-                autoPlay
-                loop
-                muted
-                controls // 你想讓使用者手動控制也可以加上這個
-            >
-                <source src={videos[language]} type="video/mp4" />
-            </video>
+            <iframe
+                key={language}
+                src={videos[language]}
+                className="w-full sm:h-150 h-80"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+            />
             <div className="top-5 right-5 flex gap-3 center">
                 {["zh", "en", "jp"].map((lang) => (
                     <button

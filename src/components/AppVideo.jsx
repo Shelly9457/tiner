@@ -2,39 +2,21 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function AppVideo() {
-    const videoRef = useRef(null);
     const [language, setLanguage] = useState("zh"); // zh, en, jp
-
-    // 🔹 三個語言的影片檔案
     const videos = {
-        
-        zh: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/app_chinese.m4v",
-        en: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/app_english.mp4",
-        jp: "https://cmqy32keaml8j4go.public.blob.vercel-storage.com/app_japan.mp4",
+        zh: "https://www.youtube.com/embed/4G5VdhKDbEo?si=4j22cYwyszcChiDI",
+        en: "https://www.youtube.com/embed/rL6gYi6swcI?si=IseU_mS92O8WkAVA",
+        jp: "https://www.youtube.com/embed/V2v1Gsh2ZTs?si=mQkn4H1iE40hHyOI",
     };
-    useEffect(() => {
-        const video = videoRef.current;
-        if (video) {
-            video.load();
-            video.play().catch(() => {
-                console.warn("自動播放被阻止，等待使用者互動"); 
-            });
-        }
-    }, [language]);
     return (
         <div className="relative w-full overflow-hidden">
-            <video
-                ref={videoRef}
-                className="w-full h-full object-cover"
-                preload="auto"
-                playsInline
-                autoPlay
-                loop
-                muted
-                controls // 你想讓使用者手動控制也可以加上這個
-            >
-                <source src={videos[language]} type="video/mp4" />
-            </video>
+            <iframe
+                key={language}
+                src={videos[language]}
+                className="w-full h-100"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+            />
             <div className="top-5 right-5 flex gap-3 center">
                 {["zh", "en", "jp"].map((lang) => (
                     <button

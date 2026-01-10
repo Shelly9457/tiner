@@ -38,7 +38,7 @@ export default function Home() {
 					loop
 					playsInline
 				>
-					<source src="https://cmqy32keaml8j4go.public.blob.vercel-storage.com/app_chinese.m4v" type="video/mp4" />
+					<source src="/images/AppChinese.mp4" type="video/mp4" />
 				</video>
 				<article className="absolute inset-0 flex flex-col justify-center items-center text-(--light) font-bold bg-black/40">
 					<h1 className="xl:text-6xl text-4xl">TINER</h1>
@@ -82,11 +82,11 @@ export default function Home() {
 				</article>
 			</section>
 			<section className="py-16 lg:w-[80%] w-full mx-auto ">
-				<article className="center flex-col gap-8">
+				<article className="center flex-col gap-8 w-full">
 					<h1 className="text-center text-(--one) font-bold md:text-2xl text-lg">
 						從陸地到天空，從城市到農場，地諾科技的氫能技術正驅動下一代綠色能源革命
 					</h1>
-					<div className="flex gap-8 xl:flex-row flex-col">
+					<div className="flex gap-8 xl:flex-row flex-col w-full">
 						<div className="xl:w-1/2 w-full center">
 							<AppVideo></AppVideo>
 						</div>
