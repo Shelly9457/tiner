@@ -37,8 +37,9 @@ export default function Home() {
 					muted
 					loop
 					playsInline
+					preload="auto"
 				>
-					<source src="/images/AppChinese_web.mp4" type="video/mp4" />
+					<source src="/images/appchinese_web.mp4" type="video/mp4" />
 				</video>
 				<article className="absolute inset-0 flex flex-col justify-center items-center text-(--light) font-bold bg-black/40">
 					<h1 className="xl:text-6xl text-4xl">TINER</h1>
